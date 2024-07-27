@@ -913,6 +913,7 @@ technologies = {
 
 		flamethrower_inf = {
 			soft_attack = 0.03
+			hard_attack = 0.03
 			fort = {
 				defence = 0.05
 				attack = 0.10
@@ -922,7 +923,6 @@ technologies = {
 				movement = 0.1
 			}
 		}
-
 		
 		path = {
 			leads_to_tech = tech_flamethrower3
@@ -949,6 +949,7 @@ technologies = {
 		
 		flamethrower_inf = {
 			soft_attack = 0.03
+			max_strength = 5
 			urban = {
 				attack = 0.1	
 				defence = 0.05
@@ -958,6 +959,7 @@ technologies = {
 				movement = 0.1
 			}	
 		}
+
 		path = {
 			leads_to_tech = tech_flamethrower4
 			research_cost_coeff = 1
@@ -985,6 +987,9 @@ technologies = {
 			soft_attack = 0.05
 			fort = {
 				attack = 0.1
+			}
+			forest = {
+				attack = 0.15
 			}
 		}
 
