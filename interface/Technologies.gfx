@@ -349,6 +349,26 @@ spriteTypes = {
 	}		
 	
 	SpriteType = {
+		name = "GFX_tech_flamethrower4_medium"
+		texturefile = "gfx/interface/technologies/tech_flamethrower4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_flamethrower3_medium"
+		texturefile = "gfx/interface/technologies/tech_flamethrower3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_tech_flamethrower2_medium"
+		texturefile = "gfx/interface/technologies/tech_flamethrower2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_tech_flamethrower_medium"
+		texturefile = "gfx/interface/technologies/tech_flamethrower.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_tech_signal_company4_medium"
 		texturefile = "gfx/interface/technologies/tech_signal_company4.dds"
 	}	

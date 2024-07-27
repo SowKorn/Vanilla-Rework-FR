@@ -644,3 +644,5 @@
  category_support_artillery: "Support Artillery"
  jungle_pioneers_support: "Jungle Pioneers Company"
  AIR_WING_EXPERIENCE_VALUE_MODIFIER: "\n  - Experience: $VALUE|%-=2$"
+ flamethrower_inf: "Flamethrower"
+ flamethrower_inf_desc: "Flamethrower are used since the 1st World War,frightening even for an entire divisions."
