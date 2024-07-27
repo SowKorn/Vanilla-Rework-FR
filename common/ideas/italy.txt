@@ -1982,26 +1982,6 @@ ideas = {
 			}
 		}
 
-		ITA_nuclear_research = {
-			removal_cost = -1
-
-			picture = SOV_atomic_bomb_project
-				
-			allowed = {
-				original_tag = ITA
-			}
-
-			allowed_civil_war = {
-				has_completed_focus = ITA_new_forms_of_weaponry
-			}
-
-			modifier = {
-				research_speed_factor = 0.05
-				nuclear_production_factor = 0.1
-				production_speed_nuclear_reactor_factor = 0.15
-			}
-		}
-
 		ITA_political_reforms = {
 			removal_cost = -1
 
@@ -2399,53 +2379,6 @@ ideas = {
 				army_core_attack_factor = 0.1
 				cic_to_overlord_factor = 0.1
 				mic_to_overlord_factor = 0.1
-			}
-		}
-
-		ITA_prioritizing_the_military  = {
-
-			picture = MEX_callistas 
-				
-			allowed = {
-				original_tag = ITA
-			}
-
-			allowed_civil_war = {
-				OR = {
-					has_completed_focus = ITA_reorganize_regio_esercito
-					has_completed_focus = ITA_reinforce_regia_aeronautica
-				}
-			}
-					
-			modifier = {
-				consumer_goods_factor = 0.10
-				industrial_capacity_factory = -0.025
-				production_speed_industrial_complex_factor = -0.05
-				production_speed_arms_factory_factor = -0.05
-				command_power_gain_mult = 0.05
-			}
-		}
-
-		ITA_impero_italiano = {
-	
-			picture = ITA_impero_italiano
-	
-			removal_cost = -1	
-	
-			allowed = {
-				original_tag = ITA
-			}
-
-			allowed_civil_war = {
-				has_completed_focus = ITA_proclaim_the_italian_empire
-			}
-			
-			modifier = {
-				army_org_factor = 0.05
-				air_mission_efficiency = 0.05
-				navy_org_factor = 0.05
-				non_core_manpower = 0.1
-				annex_cost_factor = -0.15
 			}
 		}
 
@@ -3672,35 +3605,6 @@ ideas = {
 			}
 		}
 
-		ITA_officine_meccaniche = { #Could be North (Milano) -> Considered anywhere
-			picture = ITA_officine_meccaniche
-			
-			allowed = {
-				original_tag = ITA
-				has_dlc = "By Blood Alone"
-			}
-			
-			available = {
-				has_completed_focus = ITA_new_ricostruzione_industriale
-			}
-			
-			research_bonus = {
-				motorized_equipment = 0.2
-			}
-
-			equipment_bonus = {
-				motorized_equipment = {
-					instant = yes
-					build_cost_ic = -0.15
-				}
-				train_equipment = {
-					instant = yes
-					build_cost_ic = -0.15
-				}
-			}
-			
-			traits = { motorized_equipment_manufacturer }
-		}
 	}
 
 	industrial_concern = {
