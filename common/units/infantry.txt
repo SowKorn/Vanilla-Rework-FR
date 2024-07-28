@@ -426,7 +426,7 @@ sub_units = {
 		
 		ai_priority = 50
 		priority = 601
-		active = yes
+		active = no
 
 		type = {
 			infantry
@@ -527,7 +527,7 @@ sub_units = {
 
 		ai_priority = 2
 		priority = 601
-		active = yes
+		active = no
 
 		type = {
 			infantry
@@ -594,7 +594,7 @@ sub_units = {
 		
 		ai_priority = 50
 		priority = 601
-		active = yes
+		active = no
 
 		type = {
 			infantry
@@ -680,7 +680,7 @@ sub_units = {
 		
 		ai_priority = 2
 		priority = 601
-		active = yes
+		active = no
 
 		type = {
 			infantry
@@ -724,6 +724,7 @@ sub_units = {
 			attack = - 0.15
 			movement = -0.15
 		}
+
 		mountain = {
 			movement = -0.15
 		}		

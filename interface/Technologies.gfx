@@ -524,6 +524,11 @@ spriteTypes = {
 	}	
 
 	SpriteType = {
+		name = "GFX_tech_shocktroops_medium"
+		texturefile = "gfx/interface/technologies/tech_shocktroops.dds"
+	}	
+
+	SpriteType = {
 		name = "GFX_tech_mountaineers3_medium"
 		texturefile = "gfx/interface/technologies/mountain3.dds"
 	}
