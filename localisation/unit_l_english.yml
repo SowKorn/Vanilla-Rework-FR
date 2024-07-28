@@ -646,3 +646,5 @@
  AIR_WING_EXPERIENCE_VALUE_MODIFIER: "\n  - Experience: $VALUE|%-=2$"
  flamethrower_inf: "Flamethrower"
  flamethrower_inf_desc: "Flamethrower are used since the 1st World War,frightening even for an entire divisions."
+ garrison: "garrison"
+ garrison_desc: "Garrison is weaker than infantry but cheaper, avoid to use it on the front."
