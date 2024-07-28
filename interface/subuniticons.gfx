@@ -93,6 +93,8 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_integralist_militia_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_integralist_militia_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_flamethrower_inf_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_flamethrower_inf_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_garrison_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_garrison_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_shock_troop_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_shock_troop_icon.dds" noOfFrames = 2 }
+
 	####################################################
 	### Small images for DIVISIONS (On-map-counters) ###
 
@@ -171,7 +173,7 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_integralist_militia_icon_medium_white"					textureFile = "gfx/interface/counters/divisions_small/onmap_unit_marine_icon.dds" noOfFrames = 2}
 	spriteType = { name = "GFX_unit_flamethrower_inf_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_flamethrower_inf_icon.dds" noOfFrames = 2}
 	spriteType = { name = "GFX_unit_garrison_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_garrison_icon.dds" noOfFrames = 2}
-
+	spriteType = { name = "GFX_unit_shocktroop_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_shock_troop_icon_icon.dds" noOfFrames = 2}
 
 
 	
@@ -247,6 +249,7 @@ spriteTypes = {
 	spriteType = { name = "GFX_div_templ_87_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_087.dds" }
 	spriteType = { name = "GFX_div_templ_88_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_088.dds" }
 	spriteType = { name = "GFX_div_templ_89_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_089.dds" }
+	spriteType = { name = "GFX_div_templ_90_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_090.dds" }
 
 
 	
@@ -323,7 +326,7 @@ spriteTypes = {
 	spriteType = { name = "GFX_div_templ_87_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_087.dds" }
 	spriteType = { name = "GFX_div_templ_88_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_088.dds" }
 	spriteType = { name = "GFX_div_templ_89_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_089.dds" }
-
+	spriteType = { name = "GFX_div_templ_90_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_090.dds" }
 
 	
 	#################################
