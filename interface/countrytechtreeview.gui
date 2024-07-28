@@ -299,7 +299,7 @@ guiTypes = {
 
 			
 			gridboxtype = {
-				name = "desertinfantry_at_tree"
+				name = "desert_inf_tree"
 				position = { x = 140 y = 1150 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -313,7 +313,7 @@ guiTypes = {
 			}
 
 			gridboxtype = {
-				name = "jungletroops_tree"
+				name = "snipers_tree"
 				position = { x = 140 y = 1310 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
