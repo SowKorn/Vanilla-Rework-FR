@@ -297,10 +297,30 @@ guiTypes = {
 				format = "LEFT"
 			}
 
+			gridboxtype = {
+				name = "shocktroops_tree"
+				position = { x = 140 y = 1105 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+			gridboxtype = {
+				name = "jaegers_tree"
+				position = { x = 140 y = 1185 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+			gridboxtype = {
+				name = "desertinfantry_tree"
+				position = { x = 140 y = 1260 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
 
 			gridboxtype = {
 				name = "tech_special_forces_tree"
-				position = { x = 140 y = 1140 }
+				position = { x = 140 y = 1320 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}

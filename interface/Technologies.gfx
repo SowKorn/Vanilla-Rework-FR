@@ -539,6 +539,51 @@ spriteTypes = {
 	}	
 
 	SpriteType = {
+		name = "GFX_shocktroops3_medium"
+		texturefile = "gfx/interface/technologies/shocktroops3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_shocktroops2_medium"
+		texturefile = "gfx/interface/technologies/shocktroops2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_shocktroops_medium"
+		texturefile = "gfx/interface/technologies/shocktroops.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_desertinfantry3_medium"
+		texturefile = "gfx/interface/technologies/desertinfantry3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_desertinfantry2_medium"
+		texturefile = "gfx/interface/technologies/desertinfantry2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_desertinfantry_medium"
+		texturefile = "gfx/interface/technologies/desertinfantry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_jaegers3_medium"
+		texturefile = "gfx/interface/technologies/jaegers3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_jaegers2_medium"
+		texturefile = "gfx/interface/technologies/jaegers2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_jaegers_medium"
+		texturefile = "gfx/interface/technologies/jaegers.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_marines3_medium"
 		texturefile = "gfx/interface/technologies/marines3.dds"
 	}
