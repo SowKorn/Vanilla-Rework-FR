@@ -37,7 +37,7 @@ sub_units = {
 		
 	
 		need = {
-			infantry_equipment = 150
+			infantry_equipment = 100
 			support_equipment = 30
 		}
 		desert = {
