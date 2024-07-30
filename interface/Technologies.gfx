@@ -512,6 +512,16 @@ spriteTypes = {
 		name = "GFX_support_weapons_medium"
 		texturefile = "gfx/interface/technologies/support_weapons.dds"
 	}		
+
+	SpriteType = {
+		name = "GFX_snipers_medium"
+		texturefile = "gfx/interface/technologies/scopesniper.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_snipers_at_medium"
+		texturefile = "gfx/interface/technologies/ATsniper.dds"
+	}
 	
 	SpriteType = {
 		name = "GFX_night_vision2_medium"

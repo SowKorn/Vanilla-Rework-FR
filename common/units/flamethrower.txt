@@ -24,9 +24,9 @@ sub_units = {
 	
 		#Size Definitions
 		max_strength = 1
-		max_organisation = 1
+		max_organisation = 2
 		default_morale = 0.3
-		manpower = 500
+		manpower = 350
 		training_time = 120
 
 		#Misc Abilities
@@ -35,7 +35,7 @@ sub_units = {
 		can_be_parachuted = no
 
 		# Important Ability
-		soft_attack = 1
+		soft_attack = 0.67
 
 		breakthrough = 0.05
 
@@ -52,11 +52,11 @@ sub_units = {
 
 		urban = {
 			defence = 0.05
-			attack = 0.1
+			attack = 0.15
 		}
 
 		marsh = {
-			movement = -0.05
+			movement = -0.2
 		}
 
 		fort = {
