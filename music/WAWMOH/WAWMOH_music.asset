@@ -1,0 +1,139 @@
+music = {
+	name = "MARKETGARDEN"
+	file = "01 - Operation Market Garden.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "FOUNTAINSTALINGRAD"
+	file = "1-43 Fountain - Dreadful Clouds of Stalingrad.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "DOGFIRE"
+	file = "1-47 Dog Fire.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "BATTLEOUTSIDE"
+	file = "1-53 Battle Outside - Riding the Tank.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "FINALPUSH"
+	file = "1-78 Final Push - Breaking the Enemy's Defense.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "SLAYEM"
+	file = "1-87 Slayem - Dimitri It is Your Choice.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "LEVELEND"
+	file = "1-90 Level End - Flooding the Tunnels.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "ZEROSATTACK"
+	file = "1-97 Zeros Attack - Harrington Down.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "MOVESOLDIER"
+	file = "1-106 Move Soldier.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "FINALATTACK"
+	file = "1-122 Final Attack - Wild Card (Reprise) - Air Strikes on the Castle.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "RUSSIANTHEME"
+	file = "1-137 Russian Theme - Bombs on the Reichstag.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "BORDERTOWN"
+	file = "02 - Border Town.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "U4902"
+	file = "03 - U-4902.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "KONNIGGRATZERMARSCH"
+	file = "3-16. Königgrätzer Marsch (Wet).ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "ROOF"
+	file = "3-19. Roof.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "SHIPYARDOFLORIENT"
+	file = "04 - Shipyards Of Lorient.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "HALFTRACKCHASE"
+	file = "08 - The Halftrack Chase.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "ROWHOUSE"
+	file = "10 - The Rowhouses.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "ARNHEM"
+	file = "11 - Arnhem.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "THURINGERWALDEXPRESS"
+	file = "13 - Thuringer Wald Express.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "STURMGEISTAT"
+	file = "14 - Sturmgeist's Armored Train.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "CLIPPINGTHEIRWINGS"
+	file = "16 - Clipping Their Wings.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "ESCAPEGOTHA"
+	file = "17 - Escaping Gotha.ogg"
+	volume = 1.5
+}
+
+

@@ -1,0 +1,117 @@
+
+music_station = "WAWMOH"
+
+music = {
+	song = "MARKETGARDEN"
+
+}
+
+music = {
+	song = "FOUNTAINSTALINGRAD"
+
+}
+
+music = {
+	song = "DOGFIRE"
+
+}
+
+music = {
+	song = "BATTLEOUTSIDE"
+
+}
+
+music = {
+	song = "FINALPUSH"
+
+}
+
+music = {
+	song = "SLAYEM"
+
+}
+
+music = {
+	song = "LEVELEND"
+
+}
+
+music = {
+	song = "ZEROSATTACK"
+
+}
+
+music = {
+	song = "MOVESOLDIER"
+
+}
+
+music = {
+	song = "FINALATTACK"
+
+}
+
+music = {
+	song = "RUSSIANTHEME"
+
+}
+
+music = {
+	song = "BORDERTOWN"
+
+}
+
+music = {
+	song = "U4902"
+
+}
+
+music = {
+	song = "KONNIGGRATZERMARSCH"
+
+}
+
+music = {
+	song = "ROOF"
+
+}
+
+music = {
+	song = "SHIPYARDOFLORIENT"
+
+}
+
+music = {
+	song = "HALFTRACKCHASE"
+
+}
+
+music = {
+	song = "ROWHOUSE"
+
+}
+
+music = {
+	song = "ARNHEM"
+
+}
+
+music = {
+	song = "THURINGERWALDEXPRESS"
+
+}
+
+music = {
+	song = "STURMGEISTAT"
+
+}
+
+music = {
+	song = "CLIPPINGTHEIRWINGS"
+
+}
+
+music = {
+	song = "ESCAPEGOTHA"
+
+}
