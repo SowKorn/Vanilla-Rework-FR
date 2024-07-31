@@ -2793,7 +2793,70 @@ focus_tree = {
 			}
 		}
 	}
-
+	focus = {
+		id = GER_artillery
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = GER_army_innovation }
+		x = 2
+		y = 1
+		relative_position_id = GER_army_innovation
+		cost = 5
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
+	
+		completion_reward = {
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_tech_bonus = {
+					name = GER_army_innovation_3
+					bonus = 0.75
+					uses = 2
+					category = artillery
+				}
+			}
+			else  ={
+				add_tech_bonus = {
+					name = GER_army_innovation_3
+					bonus = 0.5
+					uses = 1
+					category = artillery
+				}
+			}
+		}
+	}
+	focus = {
+		id = GER_mechanized
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = GER_army_innovation }
+		x = -2
+		y = 1
+		relative_position_id = GER_army_innovation
+		cost = 5
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
+	
+		completion_reward = {
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_tech_bonus = {
+					name = GER_army_innovation_3
+					bonus = 0.75
+					uses = 2
+					category = cat_mechanized_equipment
+				}
+			}
+			else  ={
+				add_tech_bonus = {
+					name = GER_army_innovation_3
+					bonus = 0.5
+					uses = 1
+					category = cat_mechanized_equipment
+				}
+			}
+		}
+	}
 	focus = {
 		id = GER_rocketry_focus
 		icon = GFX_focus_rocketry
@@ -2853,9 +2916,9 @@ focus_tree = {
 	focus = {
 		id = GER_rhineland
 		icon = GFX_goal_generic_military_sphere
-		x = 25
+		x = 26
 		y = 0
-		cost = 10
+		cost = 7.2
 
 		available = {
 			is_subject = no
