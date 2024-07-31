@@ -7535,5 +7535,9 @@ spriteTypes = {
 		name = "GFX_FIN_super_heavy_tank_2_medium"
 		texturefile = "gfx/interface/technologies/FIN_super_heavy_tank_2.dds"
 	}
+	SpriteType = {
+		name = "GFX_Siege_tech_gun_medium"
+		texturefile = "gfx/interface/technologies/siege_gun.dds"
+	}
 
 }

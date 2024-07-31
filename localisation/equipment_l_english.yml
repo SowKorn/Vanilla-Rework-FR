@@ -3911,6 +3911,10 @@
  railway_gun_equipment_desc:0 "A heavy cannon mounted on a railway carriage for transportation."
  railway_gun_desc:0 "Railways offer an opportunity to move heavy guns far inland at a reasonable speed, allowing us to bombard enemy position at great range and with good effect."
  railway_gun_equipment_1:0 "Railway Gun"
+ siege_gun_equipment:0 "Siege Artillery"
+ siege_gun_equipment_desc:0 "A cannon made for besiege city, mounted on a railway carriage for transportation. Very slow compared to Railway Gun, and get less range. "
+ siege_gun_desc:0 "Siege gun offer an opportunity to move heavy guns far inland by railway, allowing us to bombard enemy position in city especially."
+ siege_gun_equipment_1:0 "Siege Gun"
 
  floating_harbor_equipment:0 "Floating Harbor"
  floating_harbor_equipment_desc:1 "A series of pontoons and pre-fabricated concrete structures that can be moved across water and assembled within hours to create a sheltered landing space to unload supplies."
