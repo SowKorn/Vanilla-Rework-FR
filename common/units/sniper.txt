@@ -4,7 +4,7 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 0
 		ai_priority = 0
-		active = yes
+		active = no
 		affects_speed = no
 
 		type = {
@@ -33,10 +33,12 @@ sub_units = {
 		weight = 0.3
 		defense = 0.05
 		supply_consumption = 0.06
+		ap_attack = 1
 		
 	
 		need = {
-			infantry_equipment = 250
+			infantry_equipment = 100
+			support_equipment = 30
 		}
 		desert = {
 			defence = 0.1
@@ -75,9 +77,8 @@ sub_units = {
 			movement = 0.05
 		}
 		fort = {
-			attack = 0.1
 			movement = 0.1
-			defence = 0.2
+			defence = 0.1
 		}
 	}
 }
