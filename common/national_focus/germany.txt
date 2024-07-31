@@ -1211,7 +1211,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = GER_four_year_plan
-		cost = 10
+		cost = 5
 		
 		ai_will_do = {
 			factor = 9
@@ -1476,6 +1476,25 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
+	focus = {
+		id = GER_extra_tech_slot
+		icon = GFX_focus_research
+		text = extra_tech_slot
+		prerequisite = { focus = GER_army_innovation_2 }
+		x = 0
+		y = 1
+		relative_position_id = GER_army_innovation_2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
 
 	focus = {
 		id = GER_autobahn
@@ -1711,6 +1730,7 @@ focus_tree = {
 				set_state_flag = GER_german_war_economy
 			}
 		}
+		
 	}
 
 	focus = {
