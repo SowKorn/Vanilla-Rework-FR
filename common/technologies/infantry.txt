@@ -256,7 +256,7 @@ technologies = {
 
 		sniper = {
 			hard_attack = 0.15
-			ap_attack = 3
+			ap_attack = 1.5
 			urban = {
 				defence = 0.05
 				attack = 0.05
