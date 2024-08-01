@@ -795,13 +795,7 @@ focus_tree = {
 		id = USA_the_giant_wakes
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = USA_arsenal_of_democracy }
-		available = {
-			OR = {
-				has_war = yes
-				has_war_support > 0.3
-			}
-			democratic > 0.95
-		}
+		
 		continue_if_invalid = yes
 		x = 0
 		y = 1
@@ -809,6 +803,9 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			date > 1940.6.1
 		}
 
 		available_if_capitulated = yes
@@ -840,7 +837,7 @@ focus_tree = {
 						has_country_flag = USA_the_giant_wakes_added_civ_eco
 					}
 				}
-				add_ideas = civilian_economy
+				add_ideas = partial_economic_mobilisation
 				set_country_flag = USA_the_giant_wakes_added_civ_eco
 			}
 		}
