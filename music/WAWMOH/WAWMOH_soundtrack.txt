@@ -17,6 +17,11 @@ music = {
 }
 
 music = {
+	song = "FIGHTINGMAD"
+
+}
+
+music = {
 	song = "BATTLEOUTSIDE"
 
 }
@@ -38,6 +43,11 @@ music = {
 
 music = {
 	song = "ZEROSATTACK"
+
+}
+
+music = {
+	song = "WILDCARD"
 
 }
 

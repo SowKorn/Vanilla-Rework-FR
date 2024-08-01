@@ -17,6 +17,12 @@ music = {
 }
 
 music = {
+	name = "FIGHTINGMAD"
+	file = "Fighting Mad.ogg"
+	volume = 1.5
+}
+
+music = {
 	name = "BATTLEOUTSIDE"
 	file = "1-53 Battle Outside - Riding the Tank.ogg"
 	volume = 1.5
@@ -43,6 +49,12 @@ music = {
 music = {
 	name = "ZEROSATTACK"
 	file = "1-97 Zeros Attack - Harrington Down.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "WILDCARD"
+	file = "Wild Card.ogg"
 	volume = 1.5
 }
 
