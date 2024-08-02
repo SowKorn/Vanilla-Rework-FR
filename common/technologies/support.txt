@@ -916,11 +916,11 @@ technologies = {
 			hard_attack = 0.03
 			fort = {
 				defence = 0.05
-				attack = 0.10
+				attack = 0.05
 			}
 			jungle = {
 				attack = 0.1
-				movement = 0.1
+				movement = 0.05
 			}
 		}
 		
@@ -955,8 +955,8 @@ technologies = {
 				defence = 0.05
 			}
 			jungle = {
-				attack = 0.1
-				movement = 0.1
+				attack = 0.05
+				movement = 0.05
 			}	
 		}
 
@@ -986,7 +986,7 @@ technologies = {
 		flamethrower_inf = {
 			soft_attack = 0.05
 			fort = {
-				attack = 0.1
+				attack = 0.05
 			}
 			forest = {
 				attack = 0.15

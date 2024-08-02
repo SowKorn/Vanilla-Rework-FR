@@ -1507,6 +1507,13 @@ path = {
 				soft_attack = 0.05
 			}
 		}
+
+		field_hospital = {
+			battalion_mult = {
+				category = category_shocktroops
+				default_morale = 0.05
+			}
+		}
 			
 		doctrine = yes	
 		research_cost = 2.25
@@ -1560,52 +1567,6 @@ path = {
 		folder = {
 			name = special_forces_doctrine_folder
 			position = { x = 0 y = 8 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-		}
-		
-		ai_research_weights = {
-			#artillery = 4.0
-		}
-	}
-
-	desertinf_1 = { 
-		
-		xp_research_type = army
-		xp_unlock_cost = 60
-		
-		force_use_small_tech_layout = yes
-
-		allow = { 
-			AND = {
-				has_tech = desertinfantry
-			}
-		}
-			
-		doctrine = yes	
-		research_cost = 2.25
-		
-		
-		categories = {
-			special_forces_doctrine
-			category_desertinfantry
-			cat_shocktroops_doctrine
-		}
-
-		category_jaegers = {
-			soft_attack = 0.05
-		}
-
-		category_desertinfantry = {
-			soft_attack = 0.05
-		}
-
-		
-		folder = {
-			name = special_forces_doctrine_folder
-			position = { x = 3 y = 0 }
 		}
 		
 		ai_will_do = {
