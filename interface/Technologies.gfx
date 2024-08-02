@@ -1331,6 +1331,31 @@ spriteTypes = {
 		alwaystransparent = yes
 	}
 
+	SpriteType = {
+		name = "GFX_special_forces_shocktroops_medium"
+		texturefile = "gfx/interface/technologies/S1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_shocktroop_level_1_a_medium"
+		texturefile = "gfx/interface/technologies/S2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_shocktroop_level_1_b_medium"
+		texturefile = "gfx/interface/technologies/S3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_shocktroop_keystone_1_medium"
+		texturefile = "gfx/interface/technologies/S4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_shocktroop_level_2_a_medium"
+		texturefile = "gfx/interface/technologies/S5.dds"
+	}
+
 	
 	### Soviet Aircrafts ###
 
