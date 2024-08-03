@@ -1359,7 +1359,7 @@ technologies = {
 		}
 		
 
-		category_shocktroops = {
+		shock_troop = {
 			soft_attack = 0.03
 			hard_attack = 0.03
 		}
@@ -1420,7 +1420,7 @@ technologies = {
 			}
 		}
 
-		category_shocktroops = {
+		shock_troop = {
 			initiative = 0.01
 			soft_attack = 0.05
 		}
@@ -1468,7 +1468,7 @@ path = {
 			}
 		}
 
-		category_shocktroops = {
+		shock_troop = {
 			breakthrough = 0.05
 			hard_attack = 0.05
 			
@@ -1520,7 +1520,6 @@ path = {
 		
 		categories = {
 			special_forces_doctrine
-			r56_shock_infantry_tech
 			cat_shocktroops_doctrine
 		}
 
@@ -1555,11 +1554,11 @@ path = {
 			cat_shocktroops_doctrine
 		}
 
-		category_shocktroops = {
+		shock_troop = {
 			max_organisation = 5
 		}
 
-		shocktroop_special_forces_contribution_factor = -0.25
+		shock_troop_special_forces_contribution_factor = -0.25
 
 		special_forces_cap = 0.05
 		
