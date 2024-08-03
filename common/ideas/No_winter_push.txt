@@ -1,0 +1,21 @@
+ideas = {
+    country = {
+        No_push_in_winter = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				winter_attrition_factor = 0.25
+				acclimatization_cold_climate_gain_factor = -0.5
+			}
+		}
+    }
+}
