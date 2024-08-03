@@ -8914,4 +8914,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_sov_General_winter.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_No_push_in_winter"
+		texturefile = "gfx/interface/ideas/idea_no_push_in_winter.dds"
+	}
+
 }
