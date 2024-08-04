@@ -3199,6 +3199,13 @@ focus_tree = {
 		bypass = {
 			has_war_with = SOV
 		}
+
+		completion_reward = {
+			SOV = {
+					add_timed_idea = { idea = unprepared_barb days = 300 }
+				}
+			}	
+
 		ai_will_do = {
 			factor = 10
 			modifier = {

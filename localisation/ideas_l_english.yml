@@ -394,6 +394,8 @@
  general_winter_idea_desc:0 "As during the Napoleonic War, winter comes to the rescue of the Motherland"
  No_push_in_winter:0 "No Push In Winter"
  No_push_in_winter_desc:0 "No one could have imagined that Russian winter would be so tough"
+ unprepared_barb:0 "Unprepared for the Great Patriotic War"
+ unprepared_barb_desc:0 "USSR wasn't prepared for the Barbarossa Plan, we will need time before a counter attack"
  #generic_communist_revolutionary:0 "Communist Politician"
  #generic_democratic_reformer:0 "Democratic Politician"
  #generic_fascist_demagogue:0 "Fascist Politician"
