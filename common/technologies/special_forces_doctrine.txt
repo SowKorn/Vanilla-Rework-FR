@@ -1371,7 +1371,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			category_shocktroops
+			category_shocktroop_tech
 			cat_shocktroops_doctrine
 		}
 
@@ -1408,7 +1408,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			category_shocktroops
+			category_shocktroop_tech
 			cat_shocktroops_doctrine
 		}
 
@@ -1458,7 +1458,7 @@ path = {
 		
 		categories = {
 			special_forces_doctrine
-			category_shocktroops
+			category_shocktroop_tech
 			cat_shocktroops_doctrine
 		}
 
@@ -1503,14 +1503,14 @@ path = {
 
 		artillery = {
 			battalion_mult = {
-				category = category_shocktroops
+				category = category_shock_troop
 				soft_attack = 0.05
 			}
 		}
 
 		field_hospital = {
 			battalion_mult = {
-				category = category_shocktroops
+				category = category_shock_troop
 				default_morale = 0.05
 			}
 		}
@@ -1520,6 +1520,7 @@ path = {
 		
 		categories = {
 			special_forces_doctrine
+			category_shocktroop_tech
 			cat_shocktroops_doctrine
 		}
 
@@ -1550,7 +1551,7 @@ path = {
 		
 		categories = {
 			special_forces_doctrine
-			category_shocktroops
+			category_shocktroop_tech
 			cat_shocktroops_doctrine
 		}
 

@@ -26,8 +26,8 @@ sub_unit_categories = {
 	category_support_artillery
 	category_cavalry
 	category_bus
-	category_shocktroops
-	category_jaegers
+	category_shock_troop
+	category_jaeger
 	category_desertinfantry
 	category_sniper
 	category_flamethrower

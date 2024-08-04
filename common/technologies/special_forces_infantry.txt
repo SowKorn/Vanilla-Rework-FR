@@ -47,6 +47,7 @@ technologies = {
 		categories = {
 			infantry_tech
 			cat_special_forces_generic
+			category_shocktroop_tech
 		}
 		
 		ai_will_do = {
@@ -76,6 +77,7 @@ technologies = {
 		categories = {
 			infantry_tech
 			cat_special_forces_generic
+			category_shocktroop_tech
 		}
 		ai_will_do = {
 			factor = 1
@@ -100,6 +102,7 @@ technologies = {
 		categories = {
 			infantry_tech
 			cat_special_forces_generic
+			category_shocktroop_tech
 		}
 		ai_will_do = {
 			factor = 1
@@ -139,6 +142,7 @@ technologies = {
 		categories = {
 			infantry_tech
 			cat_special_forces_generic
+			category_jaeger_tech
 		}
 		
 		ai_will_do = {
@@ -169,6 +173,7 @@ technologies = {
 		categories = {
 			infantry_tech
 			cat_special_forces_generic
+			category_jaeger_tech
 		}
 		ai_will_do = {
 			factor = 0.3
@@ -192,6 +197,7 @@ technologies = {
 		categories = {
 			infantry_tech
 			cat_special_forces_generic
+			category_jaeger_tech
 		}
 	}	
 
@@ -228,6 +234,7 @@ technologies = {
 		categories = {
 			infantry_tech
 			cat_special_forces_generic
+			category_desertinfantry_tech
 		}
 		
 		ai_will_do = {
@@ -258,6 +265,7 @@ technologies = {
 		categories = {
 			infantry_tech
 			cat_special_forces_generic
+			category_desertinfantry_tech
 		}
 	}
 	
@@ -278,6 +286,7 @@ technologies = {
 		categories = {
 			infantry_tech
 			cat_special_forces_generic
+			category_desertinfantry_tech
 		}
 	}
 	
