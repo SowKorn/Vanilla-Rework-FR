@@ -1,0 +1,41 @@
+sound =
+{
+	name = "lose_of_berlin"
+	file = "lose_of_berlin.wav"
+
+}
+
+sound =
+{
+	name = "lose_of_gibralatar"
+	file = "lose_of_gibralatar.wav"
+
+}
+
+sound =
+{
+	name = "lose_of_singapour"
+	file = "lose_of_singapour.wav"
+
+}
+
+sound =
+{
+	name = "lose_of_tokyo"
+	file = "lose_of_tokyo.wav"
+
+}
+
+sound =
+{
+	name = "war_with_china"
+	file = "war_with_china.wav"
+
+}
+
+sound =
+{
+	name = "ww2_begin"
+	file = "ww2_begin.wav"
+
+}
