@@ -3169,6 +3169,10 @@ news_event = {
 	immediate = {
 		set_global_flag = fall_of_gibraltar_ger
 	}
+
+	immediate = {
+		sound_effect = lose_of_gibralatar
+	}
 	
 	mean_time_to_happen = {
 		days = 2
@@ -3341,6 +3345,10 @@ news_event = {
 	immediate = {
 		set_global_flag = fall_of_gibraltar_ita
 	}
+
+	immediate = {
+		sound_effect = lose_of_gibralatar
+	}
 	
 	mean_time_to_happen = {
 		days = 2
@@ -3383,6 +3391,10 @@ news_event = {
 	
 	immediate = {
 		set_global_flag = fall_of_singapore
+	}
+
+	immediate = {
+		sound_effect = lose_of_singapour
 	}
 	
 	mean_time_to_happen = {
@@ -3863,6 +3875,10 @@ news_event = {
 	immediate = {
 		set_global_flag = fall_of_berlin_usa
 	}
+
+	immediate = {
+		sound_effect = lose_of_berlin
+	}
 	
 	mean_time_to_happen = {
 		days = 2
@@ -3905,6 +3921,10 @@ news_event = {
 	
 	immediate = {
 		set_global_flag = fall_of_berlin_eng
+	}
+
+	immediate = {
+		sound_effect = lose_of_berlin
 	}
 	
 	mean_time_to_happen = {
@@ -3949,6 +3969,10 @@ news_event = {
 	immediate = {
 		set_global_flag = fall_of_berlin_fra
 	}
+
+	immediate = {
+		sound_effect = lose_of_berlin
+	}
 	
 	mean_time_to_happen = {
 		days = 2
@@ -3991,6 +4015,10 @@ news_event = {
 	
 	immediate = {
 		set_global_flag = fall_of_berlin_pol
+	}
+
+	immediate = {
+		sound_effect = lose_of_berlin
 	}
 	
 	mean_time_to_happen = {
@@ -4204,6 +4232,20 @@ news_event = {
 	
 	immediate = {
 		set_global_flag = fall_of_tokyo_usa
+	}
+	
+	immediate = {
+		sound_effect = lose_of_tokyo
+		
+		limit = {
+			has_government = democratic has_government = communism}
+	}
+
+	immediate = {
+		sound_effect = lose_of_tokyo_axe
+		
+		limit = {
+			has_government = fascism}
 	}
 	
 	mean_time_to_happen = {
@@ -4429,6 +4471,10 @@ news_event = {
 	immediate = {
 		set_global_flag = fall_of_berlin_sov
 		play_victory_parade_effect = yes
+	}
+
+	immediate = {
+		sound_effect = lose_of_berlin
 	}
 	
 	mean_time_to_happen = {

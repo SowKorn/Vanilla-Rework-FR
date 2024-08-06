@@ -39,3 +39,10 @@ sound =
 	file = "ww2_begin.wav"
 
 }
+
+sound =
+{
+	name = "lose_of_tokyo_axe"
+	file = "lose_of_tokyo_axe.wav"
+
+}
