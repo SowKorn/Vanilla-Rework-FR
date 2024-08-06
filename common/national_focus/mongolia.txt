@@ -521,30 +521,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = MON_religious_taxations
-		icon = GFX_SOV_borrow_spanish_gold
-		x = -2
-		y = 1
-		cost = 10
-		prerequisite = { focus = MON_buddhist_compromise }
-
-		available_if_capitulated = yes
-		
-		relative_position_id = MON_buddhist_compromise
-		
-		ai_will_do = {
-			factor = 2
-		}
-
-		complete_tooltip = {
-			
-		}
-
-		completion_reward = {
-			add_timed_idea = { idea = MON_religious_taxation days = 700 }
-		}
-	}
+	
 
 	focus = {
 		id = MON_remove_religious_figureheads
@@ -572,30 +549,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = MON_cooperation_with_buddhists
-		icon = GFX_focus_mex_triumph_over_the_cristeros
-		x = 2
-		y = 1
-		cost = 10
-		prerequisite = { focus = MON_buddhist_compromise }
-
-		available_if_capitulated = yes
-		
-		relative_position_id = MON_buddhist_compromise
-		
-		ai_will_do = {
-			factor = 2
-		}
-
-		complete_tooltip = {
-			
-		}
-
-		completion_reward = {
-			add_ideas = { MON_buddhist_compromise_idea }
-		}
-	}
+	
 
 	focus = {
 		id = MON_government_reforms
@@ -605,8 +559,7 @@ focus_tree = {
 		cost = 20
 		prerequisite = { focus = MON_religious_taxations }
 		prerequisite = { focus = MON_remove_religious_figureheads }
-		prerequisite = { focus = MON_cooperation_with_buddhists }
-
+		
 		available_if_capitulated = yes
 		
 		relative_position_id = MON_remove_religious_figureheads
@@ -656,10 +609,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = MON_collectivisation_3
-				add_idea = MON_collectivisation_4
-			}
+			add_research_slot = 1
 		}
 	}
 
@@ -688,40 +638,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = MON_unite_steppes
-		icon = GFX_focus_YUG_pan_slavic_congress
-		x = 0
-		y = 1
-		cost = 10
-		prerequisite = { focus = MON_new_constitution }
-
-		available_if_capitulated = yes
-		
-		relative_position_id = MON_new_constitution
-		
-		ai_will_do = {
-			factor = 2
-		}
-
-		complete_tooltip = {
-			
-		}
-
-		completion_reward = {
-			add_state_core = 329
-			add_state_core = 618
-			add_state_core = 760
-			add_state_core = 759
-			add_state_core = 287
-			add_state_core = 619
-			add_state_core = 617
-			add_state_core = 618
-			add_state_core = 757
-			add_state_core = 758
-			add_state_core = 322
-		}
-	}
+	
 
 	focus = {
 		id = MON_soviet_subsidies
@@ -840,31 +757,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = MON_mobilise_the_workers
-		icon = GFX_goal_generic_production
-		x = 0
-		y = 1
-		cost = 10
-		prerequisite = { focus = MON_paving_the_road }
-		relative_position_id = MON_paving_the_road
-
-		available_if_capitulated = yes
-		
-		
-		
-		ai_will_do = {
-			factor = 2
-		}
-
-		complete_tooltip = {
-			
-		}
-
-		completion_reward = {
-			add_ideas = { MON_mobilise_the_workers_idea }
-		}
-	}
+	
 
 	
 
@@ -889,7 +782,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_research_slot = 1
+			random_owned_controlled_state = {
+				prioritize = { 330 818 817 }
+				limit = {
+					is_in_home_area = yes
+				}
+				add_resource = {
+					type = oil
+					amount = 50
+				}
+			}
 		}
 	}
 
@@ -1289,11 +1191,9 @@ focus_tree = {
 
 		completion_reward = {
 			329 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = steel_refinery
-					level = 1
-					instant_build = yes
+				add_re
+			
+
 				}
 			}
 			330 = {
