@@ -1262,6 +1262,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			add_ideas = GER_civilian_expension
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1403,7 +1404,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_autarky
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 4
 		}
@@ -1680,6 +1681,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			add_ideas = GER_military_production
 			
 			random_owned_controlled_state = {
 				limit = {
