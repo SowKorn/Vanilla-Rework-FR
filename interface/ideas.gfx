@@ -8924,4 +8924,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/unprepared_barb_idea.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_Bagration_Ope"
+		texturefile = "gfx/interface/ideas/bagration.dds"
+	}
+
 }
