@@ -1742,6 +1742,7 @@ focus_tree = {
 		x = 10
 		y = 0
 		relative_position_id = SOV_infrastructure_effort_nsb
+		prerequisite = { focus = SOV_desperate_measures }
 		cost = 5
 
 		ai_will_do = {
@@ -6586,14 +6587,14 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_the_centre
+		id = SOV_The_book_from_Stalin
 		icon = GFX_focus_fra_loyalty_stalin
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
 		x = 0
 		y = 1
 
 		relative_position_id = SOV_the_path_of_marxism_leninism
-		cost = 5
+		cost = 7
 
 		available = {
 
@@ -6602,6 +6603,18 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA FOCUS_FILTER_STABILITY}
 
 		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_idea = partial_economic_mobilisation }
+				}
+				add_ideas = partial_economic_mobilisation
+			}
+			else_if = {
+				limit = {
+					has_idea = partial_economic_mobilisation 
+				}
+				add_political_power = 150 				
+			}
 			hidden_effect = {
 				add_dynamic_modifier = { modifier = SOV_the_politburo_good_dynamic_modifier }
 			}
@@ -6621,10 +6634,10 @@ focus_tree = {
 	focus = {
 		id = SOV_socialism_in_one_country
 		icon = GFX_focus_SOV_socialism_in_one_country
-		prerequisite = { focus = SOV_the_centre }
+		prerequisite = { focus = SOV_The_book_from_Stalin }
 		x = -1
 		y = 1
-		relative_position_id = SOV_the_centre
+		relative_position_id = SOV_The_book_from_Stalin
 		cost = 5
 
 		available = {
@@ -6648,10 +6661,10 @@ focus_tree = {
 	focus = {
 		id = SOV_the_stalin_constitution
 		icon = GFX_goal_support_communism
-		prerequisite = { focus = SOV_the_centre }
+		prerequisite = { focus = SOV_The_book_from_Stalin }
 		x = 1
 		y = 1
-		relative_position_id = SOV_the_centre
+		relative_position_id = SOV_The_book_from_Stalin
 		cost = 5
 
 		available = {
@@ -8503,7 +8516,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = SOV_the_comintern
-		cost = 1
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
@@ -8516,7 +8529,7 @@ focus_tree = {
 		available = {
 			has_civil_war = no
 			OR = {
-				has_completed_focus = SOV_the_centre
+				has_completed_focus = SOV_The_book_from_Stalin
 				has_completed_focus = SOV_the_left_opposition
 				has_completed_focus = SOV_the_right_opposition
 			}
@@ -8906,7 +8919,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_the_comintern
-		cost = 1
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -9011,7 +9024,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_baltic_security
-		cost = 1
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -9096,7 +9109,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_claims_in_baltic
-		cost = 1
+		cost = 5
 		
 		ai_will_do = {
 			factor = 1
@@ -10246,4 +10259,91 @@ ai_will_do = {
 #			}
 #		}
 #	}
-#}
+#}	
+focus = {
+		id = SOV_Mobilisation_Wave
+		icon = GFX_focus_SOV_restore_cossack_units
+		prerequisite = { focus = SOV_barrier_troops }
+		x = 0
+		y = 1
+		relative_position_id = SOV_barrier_troops
+		cost = 5
+		
+		available = {
+			casualties > 100
+			surrender_progress > 0.30
+		}
+
+		completion_reward = {
+					every_state = {
+						limit = {	
+							AND = {
+								any_neighbor_state = { OR = { is_controlled_by = GER is_controlled_by = ROM is_controlled_by = HUN is_controlled_by = FIN is_controlled_by = ITA is_controlled_by = BUL  is_controlled_by = SPR is_controlled_by = EFR is_controlled_by = SLO is_controlled_by = JAP is_controlled_by = MAN is_controlled_by = RCC } }
+								is_controlled_by = SOV
+							}
+						}
+						create_unit = {
+							division = "division_template = \"Strelkovaya Diviziya - Reinforcements\" start_experience_factor = 0.1 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_2 = { owner = \"SOV\" } artillery_equipment_2 = { owner = \"SOV\" }} "
+							owner = SOV
+						}
+						create_unit = {
+							division = "division_template = \"Strelkovaya Diviziya - Reinforcements\" start_experience_factor = 0.1 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_2 = { owner = \"SOV\" } artillery_equipment_2 = { owner = \"SOV\" }} "
+							owner = SOV
+						}
+						create_unit = {
+							division = "division_template = \"Strelkovaya Diviziya - Reinforcements\" start_experience_factor = 0.1 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_2 = { owner = \"SOV\" } artillery_equipment_2 = { owner = \"SOV\" }} "
+							owner = SOV
+						}
+
+					}
+		}
+}
+focus = {
+		id = SOV_Offensive_Bagration
+		icon = GFX_goal_generic_war_with_comintern
+		available_if_capitulated = no
+		will_lead_to_war_with = SOV
+
+		cancel = {
+			is_subject = yes
+			NOT = { country_exists = SOV }
+		}
+		
+		available = {
+			date > 1943.6.1
+			is_subject = no
+		}
+		x = 15
+		y = 8
+		cost = 3
+		completion_reward = {
+			SOV = {
+					add_timed_idea = { idea = Bagration_Ope days = 90 }
+			}
+		}
+}
+
+focus = {
+		id = SOV_Airport_Support_Attack
+		icon = GFX_goal_generic_occupy_start_war
+		available_if_capitulated = no
+		will_lead_to_war_with = SOV
+
+		cancel = {
+			is_subject = yes
+			NOT = { country_exists = SOV }
+		}
+		
+		available = {
+			date > 1943.6.1
+			is_subject = no
+		}
+		x = 17
+		y = 8
+		cost = 3
+		completion_reward = {
+			SOV = {
+					add_timed_idea = { idea = Attack_On_German_Airport days = 30 }
+			}
+		}
+}
