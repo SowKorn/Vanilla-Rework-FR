@@ -1,0 +1,33 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_supereventsbg"
+		textureFile = "/gfx/superevents_gui/supereventsbg.dds"
+	}
+	spriteType = {
+		name = "GFX_supereventsbg_test"
+		textureFile = "/gfx/superevents_gui/supereventsbg_test.dds"
+	}
+	spriteType = {
+		name = "GFX_supereventsbutton"
+		textureFile = "/gfx/superevents_gui/supereventsbutton.dds"
+	}
+	spriteType = {
+		name = "GFX_supereventsoverlay"
+		textureFile = "/gfx/superevents_gui/supereventsoverlay.dds"
+	}
+	
+	#meat and potatoes
+	spriteType = {
+		name = "GFX_superevents_world_war_ii"
+		textureFile = "/gfx/superevents_pictures/superevents_world_war_ii.dds"
+	}
+	spriteType = {
+		name = "GFX_superevents_gersov_war"
+		textureFile = "/gfx/superevents_pictures/superevents_gersov_war.dds"
+	}
+	spriteType = {
+		name = "GFX_superevents_pacific_war"
+		textureFile = "/gfx/superevents_pictures/superevents_pacific_war.dds"
+	}
+}

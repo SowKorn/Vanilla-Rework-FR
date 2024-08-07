@@ -1,0 +1,214 @@
+﻿#KEY:
+#
+#.0xx: country fall events
+#.1xx: historical war events 
+#.2xx: ahistorical war events
+#.3xx: new country cosmetic
+#.4xx: nation internal change events (excluding civil wars)
+#.5xx: powerful achievement events
+#
+#
+#
+#
+#
+#
+#EXAMPLE: .001 would be the first event for country fall events section.
+
+add_namespace = superevents
+
+country_event = { #test event
+	id = superevents.0
+	title = superevents.0.t
+	desc = superevents.0.d
+	
+	immediate = {
+		set_global_flag = SE_superevents_activate
+		set_global_flag = SE_test
+	}
+
+	hidden = yes
+	
+	fire_only_once = no
+
+	is_triggered_only = yes
+	
+	option = {
+		name = superevents.0.a
+	}
+}
+
+###1939###
+# World War 2
+country_event = {
+	id = superevents.103
+	title = superevents.0.t
+	desc = superevents.0.d
+	
+	immediate = {
+		set_global_flag = SE_superevents_activate
+		set_global_flag = SE_world_war_ii
+		
+		set_global_flag = SE_prevent_duplicate_wwii
+		#cue funni music
+	}
+
+	immediate = {
+		sound_effect = ww2_begin
+	}
+
+	hidden = yes
+	
+	fire_only_once = yes
+
+	trigger = {
+		NOT = {
+			has_global_flag = SE_superevents_activate
+		}
+		GER = {
+			is_major = yes
+			is_subject = no
+		}
+		any_country = {
+			is_major = yes
+			has_war_with = GER
+			NOT = {
+				original_tag = GER
+			}
+		}
+		NOT = {
+			has_global_flag = SE_prevent_duplicate_wwii
+		}
+	}
+	
+	option = {
+		name = superevents.0.a
+	}
+} # German Invasion of Poland
+country_event = {
+	id = superevents.104
+	title = superevents.0.t
+	desc = superevents.0.d
+	
+	immediate = {
+		set_global_flag = SE_superevents_activate
+		set_global_flag = SE_gerpol_war
+
+		set_global_flag = SE_prevent_duplicate_wwii
+		#cue funni music
+	}
+
+	immediate = {
+		sound_effect = ww2_begin
+	}
+
+	hidden = yes
+	
+	fire_only_once = yes
+
+	trigger = {
+		NOT = {
+			has_global_flag = SE_superevents_activate
+		}
+		any_country = {
+			is_major = yes
+			NOT = {
+				OR = {
+					has_war_with = GER
+					has_guaranteed = POL
+					is_in_faction_with = POL
+				}
+			}
+		}
+		GER = {
+			is_subject = no
+			has_offensive_war_with = POL
+		}
+		POL = {
+			is_subject = no
+		}
+		NOT = {
+			has_global_flag = SE_prevent_duplicate_wwii
+		}
+	}
+	
+	option = {
+		name = superevents.0.a
+	}
+}
+
+###1941###
+# Operation Barbarossa
+country_event = {
+	id = superevents.106
+	title = superevents.0.t
+	desc = superevents.0.d
+	
+	immediate = {
+		set_global_flag = SE_superevents_activate
+		set_global_flag = SE_gersov_war
+		#cue funni music
+		sound_effect = Barb
+	}
+
+	immediate = {
+		sound_effect = Barb
+	}
+
+	hidden = yes
+	
+	fire_only_once = yes
+
+	trigger = {
+		NOT = {
+			has_global_flag = SE_superevents_activate
+		}
+		GER = {
+			is_subject = no
+			has_offensive_war_with = SOV
+		}
+		SOV = {
+			is_subject = no
+		}
+	}
+	
+	option = {
+		name = superevents.0.a
+	}
+}
+# Pearl Harbor
+country_event = {
+	id = superevents.107
+	title = superevents.0.t
+	desc = superevents.0.d
+	
+	immediate = {
+		set_global_flag = SE_superevents_activate
+		set_global_flag = SE_pacific_war
+		#cue funni music
+	}
+
+	immediate = {
+		sound_effect = Asia_war
+	}
+
+	hidden = yes
+	
+	fire_only_once = yes
+
+	trigger = {
+		NOT = {
+			has_global_flag = SE_superevents_activate
+		}
+		JAP = {
+			is_subject = no
+			has_offensive_war_with = USA
+		}
+		USA = {
+			is_subject = no
+		}
+	}
+	
+	option = {
+		name = superevents.0.a
+	}
+}
