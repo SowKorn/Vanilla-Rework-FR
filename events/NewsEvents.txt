@@ -2911,6 +2911,10 @@ news_event = {
 	immediate = {
 		set_global_flag = fall_of_moscow
 	}
+
+	immediate = {
+		sound_effect = 07 - Call to Arms
+	}
 	
 	mean_time_to_happen = {
 		days = 2
@@ -4295,6 +4299,10 @@ news_event = {
 	immediate = {
 		set_global_flag = fall_of_moscow_allies
 	}
+
+	immediate = {
+		sound_effect = 07 - Call to Arms
+	}
 	
 	mean_time_to_happen = {
 		days = 2
@@ -4736,6 +4744,10 @@ news_event = {
 	immediate = {
 		set_global_flag = fall_of_tokyo_sov
 	}
+
+	immediate = {
+		sound_effect = lose_of_tokyo
+	}
 	
 	mean_time_to_happen = {
 		days = 2
@@ -4821,6 +4833,10 @@ news_event = {
 	
 	immediate = {
 		set_global_flag = fall_of_tokyo_chi
+	}
+
+	immediate = {
+		sound_effect = lose_of_tokyo
 	}
 	
 	mean_time_to_happen = {
