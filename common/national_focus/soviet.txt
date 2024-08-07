@@ -6131,7 +6131,7 @@ focus_tree = {
 					name = "Shtrafnaya Chast"
 					division_names_group = SOV_PEN_01
 					is_locked = yes
-
+					195 = {
 					regiments = {
 						penal_battalion = { x = 0 y = 0 }
 						penal_battalion = { x = 0 y = 1 }
@@ -6147,6 +6147,7 @@ focus_tree = {
 						artillery = { x = 0 y = 0 }
 					}
 				}
+			}
 
 				SOV_spawn_penal_divisions_effect = yes
 			}
