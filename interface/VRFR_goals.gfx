@@ -1,0 +1,35 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_ger_achtung_panzer"
+		texturefile = "gfx/interface/goals/ger/ger_achtung_panzer.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_heavy_tiger_cats"
+		texturefile = "gfx/interface/goals/ger/GER_heavy_tiger_cats.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_panzerfausts_for_all"
+		texturefile = "gfx/interface/goals/ger/GER_panzerfausts_for_all.dds"
+	}
+	SpriteType = {
+		name = "GFX_ger_restrict_recruitment"
+		texturefile = "gfx/interface/goals/ger/ger_restrict_recruitment.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_ss_panzer_kampf_bereigt"
+		texturefile = "GER_ss_panzer_kampf_bereigt.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_standard_panzer"
+		texturefile = "gfx/interface/goals/ger/GER_standard_panzer.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_tigers_in_the_east"
+		texturefile = "gfx/interface/goals/ger/GER_tigers_in_the_east.dds"
+	}
+	SpriteType = {
+		name = "GFX_SS_panzer_elite.dds"
+		texturefile = "gfx/interface/goals/ger/SS_panzer_elite.dds"
+	}
+}

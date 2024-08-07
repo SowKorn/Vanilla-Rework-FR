@@ -1,0 +1,141 @@
+spriteTypes = {	
+
+
+
+	SpriteType = {
+		name = "GFX_ger_achtung_panzer"
+		texturefile = "gfx/interface/goals/ger/ger_achtung_panzer.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ger/ger_achtung_panzer.dds"
+			animationtexturefile = "gfx/interface/goals/ger/ger_achtung_panzer.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+		SpriteType = {
+		name = "GFX_GER_heavy_tiger_cats"
+		texturefile = "gfx/interface/goals/ger/GER_heavy_tiger_cats.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ger/GER_heavy_tiger_cats.dds"
+			animationtexturefile = "gfx/interface/goals/ger/GER_heavy_tiger_cats.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+		SpriteType = {
+		name = "GFX_GER_panzerfausts_for_all"
+		texturefile = "gfx/interface/goals/ger/GER_panzerfausts_for_all.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ger/GER_panzerfausts_for_all.dds"
+			animationtexturefile = "gfx/interface/goals/ger/GER_panzerfausts_for_all.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+		SpriteType = {
+		name = "GFX_ger_restrict_recruitment"
+		texturefile = "gfx/interface/goals/ger/ger_restrict_recruitment.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ger/ger_restrict_recruitment.dds"
+			animationtexturefile = "gfx/interface/goals/ger/ger_restrict_recruitment.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+		SpriteType = {
+		name = "GFX_GER_ss_panzer_kampf_bereigt"
+		texturefile = "GER_ss_panzer_kampf_bereigt.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "GER_ss_panzer_kampf_bereigt.dds"
+			animationtexturefile = "GER_ss_panzer_kampf_bereigt.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+		SpriteType = {
+		name = "GFX_GER_standard_panzer.dds"
+		texturefile = "gfx/interface/goals/ger/GER_standard_panzer.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ger/GER_standard_panzer.dds"
+			animationtexturefile = "gfx/interface/goals/ger/GER_standard_panzer.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+		SpriteType = {
+		name = "GFX_GER_tigers_in_the_east"
+		texturefile = "gfx/interface/goals/ger/GER_tigers_in_the_east.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ger/GER_tigers_in_the_east.dds"
+			animationtexturefile = "gfx/interface/goals/ger/GER_tigers_in_the_east.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+		SpriteType = {
+		name = "GFX_SS_panzer_elite.dds"
+		texturefile = "gfx/interface/goals/ger/SS_panzer_elite.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ger/SS_panzer_elite.dds"
+			animationtexturefile = "gfx/interface/goals/ger/SS_panzer_elite.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+}
