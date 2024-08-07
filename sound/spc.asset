@@ -46,3 +46,24 @@ sound =
 	file = "lose_of_tokyo_axe.wav"
 
 }
+
+sound =
+{
+	name = "Asia_war"
+	file = "Asia_war.wav"
+
+}
+
+sound =
+{
+	name = "Call_to_war"
+	file = "Call_to_war.wav"
+
+}
+
+sound =
+{
+	name = "Barb"
+	file = "Barb.wav"
+
+}

@@ -60,3 +60,30 @@ soundeffect = {
 	}
 	volume = 1.4
 }
+
+soundeffect = {
+	name = "Asia_war"
+	sounds = {
+		sound =
+			Asia_war
+	}
+	volume = 1.4
+}
+
+soundeffect = {
+	name = "Call_to_war"
+	sounds = {
+		sound =
+			Call_to_war
+	}
+	volume = 1.4
+}
+
+soundeffect = {
+	name = "Barb"
+	sounds = {
+		sound =
+			Barb
+	}
+	volume = 1.4
+}
