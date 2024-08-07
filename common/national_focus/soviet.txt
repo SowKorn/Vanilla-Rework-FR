@@ -5971,6 +5971,7 @@ focus_tree = {
 		id = SOV_military_reorganization
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = SOV_rehabilitated_military }
+		prerequisite = { focus = SOV_desperate_measures }
 		x = 0
 		y = 2
 		relative_position_id = SOV_rehabilitated_military
