@@ -42,65 +42,10 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = GER__Invest_In_Flugabwehrkanone
-		icon = GFX_focus_generic_air_defense
-		prerequisite = { focus = GER_four_year_plan }
-		relative_position_id = GER_four_year_plan
-		x = -2
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 12
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			add_ideas = Flugabwehrkanone
-			add_tech_bonus = {
-				name = GER_four_year_plan
-				bonus = 1.0
-				uses = 2
-				category = cat_anti_air
-			}
-			every_controlled_state = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 2
-					instant_build = yes
-				}
-			}	
-		}
-	}
+	
 
-	focus = {
-		id = GER__ressources
-		icon = GFX_focus_generic_resource_extraction
-		prerequisite = { focus = GER_four_year_plan }
-		relative_position_id = GER_four_year_plan
-		x = 2
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 12
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			64 = {
-				add_resource = {
-					type = steel
-					amount = 112
-				}
-				add_resource = {
-					type = tungsten
-					amount = 15
-				}
-				add_resource = {
-					type = chromium
-					amount = 26
-				}
-			}
-		}
-	}
+	
+	
 
 	focus = {
 		id = GER_west_wall
@@ -1892,20 +1837,20 @@ focus_tree = {
 					modifier = GER_align_hungary
 				}
 				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 4
 						instant_build = yes
 					}
 				}
 			}	
 			BUL = {
 				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 4
 						instant_build = yes
 					}
 				}
@@ -1986,10 +1931,10 @@ focus_tree = {
 			}
 			ROM = {
 				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 4
 						instant_build = yes
 					}
 				}
@@ -2006,10 +1951,10 @@ focus_tree = {
 			}
 			ITA = {
 				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 4
 						instant_build = yes
 					}
 				}
@@ -3204,7 +3149,7 @@ focus_tree = {
 
 		completion_reward = {
 			SOV = {
-					add_timed_idea = { idea = unprepared_barb days = 300 }
+					add_timed_idea = { idea = unprepared_barb days = 100 }
 				}
 			}	
 
