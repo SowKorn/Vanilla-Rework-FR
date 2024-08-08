@@ -1562,33 +1562,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = MON_legacy_of_khanate
-		icon = GFX_focus_ger_great_red_menace
-		prerequisite = { focus = MON_army_traditions }
-		x = -1
-		y = 1
-		relative_position_id = MON_army_traditions
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 27
-		}
-
-		completion_reward = {
-			add_ideas = MON_spirit_of_genghis_idea
-			add_corps_commander_role = {
-				character = MON_khan
-				traits = { cavalry_leader war_hero brilliant_strategist trait_engineer }
-				skill = 4
-				attack_skill = 4
-				defense_skill = 4
-				planning_skill = 6
-				logistics_skill = 6
-			}
-		}
-	}
+	
 	
 	focus = {
 		id = MON_spirit_of_genghis
@@ -1610,4 +1584,4 @@ focus_tree = {
 		}
 	}
 
-}		
+	
