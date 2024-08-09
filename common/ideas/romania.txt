@@ -45,7 +45,7 @@ ideas = {
 			}
 		}
 
-		ROM_romanian_volunteer_brigades = {
+		volunteer_brigades = {
 
 			picture = generic_volunteer_expedition_bonus
 
@@ -62,8 +62,8 @@ ideas = {
 			rule = { can_send_volunteers = yes }
 			
 			modifier = {
-				send_volunteer_divisions_required = -1
-				send_volunteer_size = 1
+				send_volunteer_divisions_required = -2
+				send_volunteer_size = 2
 			}
 		}
 
