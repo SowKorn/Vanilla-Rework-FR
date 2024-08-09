@@ -146,7 +146,6 @@ if = {
 	give_guarantee = TUR
 	give_guarantee = YUG
 }
-add_ideas = neutrality_idea
 add_ideas = volunteer_brigades
 
 #Kick off kings crazy life
