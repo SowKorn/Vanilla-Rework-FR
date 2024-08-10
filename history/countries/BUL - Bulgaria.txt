@@ -279,6 +279,8 @@ if = { #DLC
 		elections_allowed = no
 	}
 
+	set_research_slots = 4
+
 	add_ideas = {
 	No_push_in_winter
 }
