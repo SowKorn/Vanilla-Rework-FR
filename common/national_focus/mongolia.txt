@@ -13,7 +13,7 @@ focus_tree = {
 	
 	default = no
 	
-	continuous_focus_position = { x = 900 y = 1500 }
+	continuous_focus_position = { x = 5 y = 1300 }
 	
   # Collectivization Tree
 
@@ -72,7 +72,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			
 			add_stability = -0.1
+
 		}
 	}
 
@@ -234,25 +236,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			build_railway = {
-				level = 2
-				path = { 4801 12605 7717 1762 }
-			}
-			
 
 			build_railway = {
 				level = 2
-				path = { 4801 4732 1798 10623 4697 7799 4777 10669 7773 1877 10627}
+				path = { 4801 4732 1859 10623 1834 12579 10597 10627 10646 4690 10649 1816 7822 12528 4803 1794 11410 12613 4661 10235 1879 1375 10308 10211 4238 4309 1276 12115 10312 10284 4340 10213 9292 }
 			}
 
 			build_railway = {
 				level = 2
-				path = { 10627 4680 7731 12628 4818 12691 }
-			}
-
-			build_railway = {
-				level = 2
-				path = { 4801 4732 1859 10623 1834 1791 10543 1810 7703 12625 4680 10627 10646 4690 12563 12691 }
+				path = { 4801 10554 4766 }
 			}
 
 		}
@@ -278,10 +270,10 @@ focus_tree = {
 
 		completion_reward = {
 			330 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 5
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -445,8 +437,13 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-    			ahead_reduction = 1
-    			uses = 2
+    			bonus = 1
+    			uses = 1
+    			category = industry
+			}
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 1
     			category = industry
 			}
 			add_tech_bonus = {
@@ -609,7 +606,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 150
+			add_political_power = 100
+			add_ideas = MON_independance_path
 		}
 	}
 
@@ -663,6 +661,10 @@ focus_tree = {
     			ideology = neutrality
     			popularity = 0.2
 			}
+			set_politics = {
+    			ruling_party = neutrality
+    			elections_allowed = no
+			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -671,10 +673,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -687,10 +689,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -755,6 +757,10 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
+				build_railway = {
+				level = 2
+				path = { 4801 4732 7881 1725 12541 4858 10560 12598 4704 10839 12656 4709 }
+			}
 			}
 		}
 	}
@@ -789,12 +795,6 @@ focus_tree = {
 
 			add_tech_bonus = {
     			bonus = 1
-    			uses = 1
-    			category = industry
-			}
-
-			add_tech_bonus = {
-    			bonus = 0.75
     			uses = 1
     			category = industry
 			}
@@ -912,14 +912,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_stability = - 0.05
+			add_stability = -0.05
 			330 = {
 				add_extra_state_shared_building_slots = 4
 			}
 			add_tech_bonus = {
     			bonus = 0.5
     			uses = 1
-    			category = industry
+    			category = synth_resources
 			}
 		}
 	}
@@ -990,6 +990,10 @@ focus_tree = {
 		relative_position_id = MON_soviet_investments
 		
 		available_if_capitulated = yes
+
+		available = {
+			date > 1939.6.1
+		}
 		
 		ai_will_do = {
 			factor = 2
@@ -1003,7 +1007,7 @@ focus_tree = {
 
 			add_offsite_building = { 
 				type = industrial_complex
-				level = 1 
+				level = 2 
 			}
 		}
 	}
@@ -1060,10 +1064,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -1316,6 +1320,12 @@ focus_tree = {
 				uses = 2
 				category = armor
 			}
+			add_tech_bonus = {
+				name = MONgaria
+				bonus = 0.5
+				uses = 1
+				category = cat_anti_tank
+			}
 			add_ideas = MON_mobilize_steppes
 		}
 	}
@@ -1323,8 +1333,7 @@ focus_tree = {
 	focus = {
 		id = MON_tactical_innovations
 		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = MON_armour }
-		prerequisite = { focus = MON_traditionnal_battle }
+		prerequisite = { focus = MON_traditionnal_battle focus = MON_armour }
 		x = -1
 		y = 1
 		relative_position_id = MON_armour
@@ -1427,11 +1436,17 @@ focus_tree = {
 		id = MON_mobilize_the_steppes
 		icon = GFX_focus_YUG_pan_slavic_congress
 		cost = 10
-		x = 0
+		x = 1
 		y = 1
-		prerequisite = { focus = MON_spirit_of_genghis }
-		relative_position_id = MON_spirit_of_genghis
+		prerequisite = { focus = MON_volunteers }
+		relative_position_id = MON_volunteers
 		available_if_capitulated = yes
+
+		available = {
+			OR = {
+				SOV = { has_war_with = GER }
+			}
+		}
 
 		completion_reward = {
 			swap_ideas = {

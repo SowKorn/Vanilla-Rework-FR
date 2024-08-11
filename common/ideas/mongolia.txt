@@ -16,7 +16,7 @@ ideas = {
 
             modifier = {
                 party_popularity_stability_factor = 1
-                license_purchase_cost = -0.2
+                license_purchase_cost = -0.3
                 license_production_speed = 0.05
                 autonomy_gain_global_factor = -0.5
             }
@@ -38,13 +38,13 @@ ideas = {
 
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.1
-                local_resources_factor = 0.1
-                production_speed_industrial_complex_factor = 0.1
+                local_resources_factor = 0.05
+                production_speed_industrial_complex_factor = 0.05
 			}
 		}
 
         MON_industry_idea = {
-			picture = generic_agrarian_reform
+			picture = generic_economic_increase
 			allowed = {
 				original_tag = FRA
 				always = no
@@ -170,14 +170,14 @@ ideas = {
 			modifier = {
                 war_support_factor = -0.1
                 industrial_capacity_factory = -0.05
-                conscription_factor = -0.1
+                conscription_factor = -0.3
 			}
 		}
 
 		MON_collectivisation_ongoing = {
 
 			allowed = {
-				always = yes
+				always = no
 			}
 
 			allowed_civil_war = {
@@ -198,7 +198,7 @@ ideas = {
 		MON_industrialized_society = {
 
 			allowed = {
-				always = yes
+				always = no
 			}
 
 			allowed_civil_war = {
@@ -214,6 +214,27 @@ ideas = {
 				industrial_capacity_factory = 0.05
 				production_speed_arms_factory_factor = 0.05
 				fuel_gain = 0.1
+			}
+		}
+
+		MON_independance_path = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_constitutional_guarantees
+
+			modifier = {
+                political_power_gain = 0.15
+				consumer_goods_factor = -0.05
+				research_speed_factor = 0.05
 			}
 		}
     }

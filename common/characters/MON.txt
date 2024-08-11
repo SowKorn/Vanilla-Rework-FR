@@ -14,7 +14,7 @@ characters={
 	}
 
 	MON_Bortei_Norovbanzad={
-		name="MON_Bortei_Norovbanzad"
+		name="Bortei Norovbanzad"
 		portraits={
 			army={
 				large=GFX_Portrait_Asia_Generic_land_3
@@ -33,7 +33,7 @@ characters={
 	}
 
 	MON_Ghazan_Ajai={
-		name="MON_Ghazan_Ajai"
+		name="Ghazan Ajai"
 		portraits={
 			army={
 				large=GFX_Portrait_Asia_Generic_land_5
@@ -52,7 +52,7 @@ characters={
 	}
 
 	MON_Boroghul_Agasiletai={
-		name="MON_Boroghul_Agasiletai"
+		name="Boroghul Agasiletai"
 		portraits={
 			army={
 				large=GFX_Portrait_Asia_Generic_land_4
