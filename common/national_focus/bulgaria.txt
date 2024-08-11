@@ -5426,10 +5426,6 @@ focus_tree = {
 					NOT = { has_wargoal_against = TUR }
 					NOT = { is_in_faction_with = TUR }
 				}
-				create_wargoal = {
-					type = annex_everything
-					target = TUR
-				}
 			}
 
 			#Set ideology cosmetic tag to show the appropriate 3D models
@@ -5440,11 +5436,6 @@ focus_tree = {
 				news_event = { id = bftb_news.7 hours = 8 random_hours = 4 }
 			}
 
-			add_ai_strategy = {
-				type = declare_war
-				id = TUR
-				value = 100
-			}
 		}
 	}
 }
