@@ -1416,6 +1416,9 @@ NAir = {
 },
 
 NNavy = {
+
+
+
 	-- Peace Conference
 	WAR_SCORE_GAIN_FOR_SUNK_SHIP_MANPOWER_FACTOR = 0.004,			-- war score gained for every manpower killed when sinking a ship
 	WAR_SCORE_GAIN_FOR_SUNK_SHIP_PRODUCTION_COST_FACTOR = 0.020,		-- war score gained for every IC of the sunk ship
@@ -1600,7 +1603,7 @@ NNavy = {
 		0.5,	-- low
 		0.9,	-- medium
 		2.0,	-- high
-		10000,	-- I am death incarnate!
+		1000,	-- I am death incarnate!
 	},
 
 	AGGRESION_MULTIPLIER_FOR_COMBAT = 1.2,				-- ships are more aggresive in combat
@@ -1699,7 +1702,7 @@ NNavy = {
 	NAVAL_ACCIDENT_CHANCE_REDUCTION_ON_POTF = 0.005,					-- Scale of the current chance for an accident to happen, applied for the pride of the fleet.
 	NAVAL_ACCIDENT_CRITICAL_HIT_CHANCE_REDUCTION_POTF = 0.01,		-- Scale of the current chance for a critical hit when an accident happens, applied for the pride of the fleet.
 
-	NAVAL_MINES_ACCIDENT_CRITICAL_HIT_CHANCES = 0.14,				-- If an accident happens, how likely it is to be a critical hit (caused by naval mines)
+	NAVAL_MINES_ACCIDENT_CRITICAL_HIT_CHANCES = 0.12,				-- If an accident happens, how likely it is to be a critical hit (caused by naval mines)
 	NAVAL_MINES_ACCIDENT_CRITICAL_HIT_DAMAGE_SCALE = 5.0,			-- Scale the value below in case of critical hit (caused by naval mines)
 	NAVAL_MINES_ACCIDENT_STRENGTH_LOSS = 50.0,						-- Amount of strength loss when hit by naval mine
 	NAVAL_MINES_ACCIDENT_ORG_LOSS_FACTOR = 0.5,						-- Amount of strength loss when hit by naval mine
@@ -1819,18 +1822,18 @@ NNavy = {
 	RELATIVE_SURFACE_DETECTION_TO_POSITIONING_FACTOR				= 0.01,	-- multiples the surface detection difference between two sides. the side with higher detection will get a bonus of this value
 	MAX_POSITIONING_BONUS_FROM_SURFACE_DETECTION					= 0.0,  -- will clamp the bonus that you get from detection
 
-	HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR					= 0.25, -- if one side has more ships than the other, that side will get this penalty for each +100% ship ratio it has
-	MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO					= 0.75,  -- maximum penalty to get from larger fleets
+	HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR					= 0.35, -- if one side has more ships than the other, that side will get this penalty for each +100% ship ratio it has
+	MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO					= 0.9,  -- maximum penalty to get from larger fleets
 
 	HIGHER_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR					= 0.2;  -- penalty if other side has stronger carrier air force
 	MAX_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR 					= 0.2;  -- max penalty from stronger carrier air force
 
-	POSITIONING_PENALTY_FOR_SHIPS_JOINED_COMBAT_AFTER_IT_STARTS		= 0.01, -- each ship that joins the combat will have this penalty to be added into positioning
+	POSITIONING_PENALTY_FOR_SHIPS_JOINED_COMBAT_AFTER_IT_STARTS		= 0.1, -- each ship that joins the combat will have this penalty to be added into positioning
 	MAX_POSITIONING_PENALTY_FOR_NEWLY_JOINED_SHIPS 					= 0.25,  -- the accumulated penalty from new ships will be clamped to this value
 	POSITIONING_PENALTY_HOURLY_DECAY_FOR_NEWLY_JOINED_SHIPS			= 0.05,-- the accumulated penalty from new ships will decay hourly by this value
 
-	DAMAGE_PENALTY_ON_MINIMUM_POSITIONING 							= 0.5,	-- damage penalty at 0% positioning
-	SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING				= 0.5,  -- screening efficiency (screen to capital ratio) at 0% positioning
+	DAMAGE_PENALTY_ON_MINIMUM_POSITIONING 							= 0.95,	-- damage penalty at 0% positioning
+	SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING				= 0.25,  -- screening efficiency (screen to capital ratio) at 0% positioning
 	AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING					= 0.7,  -- AA penalty at 0% positioning
 	SUBMARINE_REVEAL_ON_MINIMUM_POSITIONING                         = 2.0,  -- submarine reveal change on 0% positioning
 
@@ -1871,11 +1874,11 @@ NNavy = {
 
 	GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
 		80.0,	-- big guns
-		100.0,	-- torpedoes
-		45.0,	-- small guns
+		120.0,	-- torpedoes
+		36.0,	-- small guns
 	},
 
-	DEPTH_CHARGES_HIT_CHANCE_MULT 									= 1.1, 		-- multiplies hit chance of small guns
+	DEPTH_CHARGES_HIT_CHANCE_MULT 									= 1.3, 		-- multiplies hit chance of small guns
 	DEPTH_CHARGES_DAMAGE_MULT 										= 0.9, 		-- multiplies damage of depth charges
 	DEPTH_CHARGES_HIT_PROFILE 										= 100.0,	-- hit profile for depth charges
 
@@ -1912,7 +1915,7 @@ NNavy = {
 	SUBMARINE_REVEALED_TIMEOUT 										= 16,		-- Amount of in-game-hours that makes the submarine visible if it is on the defender side.
 	SUBMARINE_REVEAL_BASE_CHANCE 									= 14,		-- Base factor for submarine detection. It's modified by the difference of a spotter's submarines detection vs submarine visibility. Use this variable for game balancing. setting this too low will cause bad spotting issues.
 	SUBMARINE_REVEAL_POW 											= 3.0,		-- A scaling factor that is applied to the reveal chance in order to make large differences in detection vs visibility more pronounced
-	SUBMARINE_BASE_TORPEDO_REVEAL_CHANCE 							= 0.04,		-- Chance of a submarine being revealed when it fires. 1.0 is 100%. this chance is then multiplied with modifier created by comparing firer's visibiility and target's detection
+	SUBMARINE_BASE_TORPEDO_REVEAL_CHANCE 							= 0.09,		-- Chance of a submarine being revealed when it fires. 1.0 is 100%. this chance is then multiplied with modifier created by comparing firer's visibiility and target's detection
 
 	MAX_NUM_HOURS_TO_WAIT_AT_ALLY_DOCKYARDS_FOR_REPAIRS 			= 48,		-- taskforces will wait at most this amount of hours in ally bases for repairs before switching to another base for repairs
 
@@ -1949,8 +1952,8 @@ NNavy = {
 	NAVAL_CONVOY_DANGER_TRIGGER_MAX = 100.0,
 
 	-- those two work together in the formula f(x) = Y(x/(x+X)) where Y is MAX and X is SLOPE
-	NAVAL_COMBAT_AIR_SUB_DETECTION_MAX = 10.0,
-	NAVAL_COMBAT_AIR_SUB_DETECTION_SLOPE = 10.0,						-- lower means sharper curve (ramps up very fast, then flatten out very fast). Must be >0
+	NAVAL_COMBAT_AIR_SUB_DETECTION_MAX = 8.0,
+	NAVAL_COMBAT_AIR_SUB_DETECTION_SLOPE = 8.0,						-- lower means sharper curve (ramps up very fast, then flatten out very fast). Must be >0
 
 	NAVAL_COMBAT_AIR_SUB_DETECTION_EXTERNAL_FACTOR = 1.0,					-- Factor applied to the stats of external air planes
 	NAVAL_COMBAT_AIR_SUB_DETECTION_INTERNAL_EFFICIENCY_FACTOR = 1.0,			-- Factor of Carrier's sortie efficiency on the stats bellow
@@ -1994,7 +1997,7 @@ NNavy = {
 	},
 
 	NAVY_PIERCING_THRESHOLD_DAMAGE_VALUES = {	-- 0 armor will always receive maximum damage (so add overmatching at your own peril). the system expects at least 2 values, with no upper limit.
-		1.00,
+		1.3,
 		1.00,
 		0.70,
 		0.40,
