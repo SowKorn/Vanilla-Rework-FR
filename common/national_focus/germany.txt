@@ -3149,7 +3149,10 @@ focus_tree = {
 
 		completion_reward = {
 			SOV = {
-					add_timed_idea = { idea = unprepared_barb days = 100 }
+					add_timed_idea = { idea = unprepared_barb days = 120 }
+				}
+				MON = {
+					add_timed_idea = { idea = unprepared_barb days = 120 }
 				}
 			}	
 
