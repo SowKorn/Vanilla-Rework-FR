@@ -1048,37 +1048,7 @@ focus_tree = {
 		}		
 	}
 
-		focus = {
-		id = ROM_romanian_volunteer_brigades
-		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = ROM_institute_royal_dictatorship }
-		x = -2
-		y = 1
-		relative_position_id = ROM_institute_royal_dictatorship
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		completion_reward = {
-			add_ideas = ROM_romanian_volunteer_brigades
-		}
-	}
+		
 
 	focus = {
 		id = ROM_revise_the_constitution
