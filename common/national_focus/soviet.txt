@@ -10303,8 +10303,6 @@ focus = {
 focus = {
 		id = SOV_Offensive_Bagration
 		icon = GFX_goal_generic_war_with_comintern
-		
-
 		available_if_capitulated = no
 		will_lead_to_war_with = SOV
 
@@ -10317,16 +10315,37 @@ focus = {
 			date > 1943.6.1
 			is_subject = no
 		}
-		x = 46
-		y = 0
+		x = 15
+		y = 8
 		cost = 3
 		completion_reward = {
 			SOV = {
 					add_timed_idea = { idea = Bagration_Ope days = 90 }
 			}
-			SOV = {
-					add_timed_idea = { idea = Attack_On_German_Airport days = 60 }
-			}
 		}
 }
 
+focus = {
+		id = SOV_Airport_Support_Attack
+		icon = GFX_goal_generic_occupy_start_war
+		available_if_capitulated = no
+		will_lead_to_war_with = SOV
+
+		cancel = {
+			is_subject = yes
+			NOT = { country_exists = SOV }
+		}
+		
+		available = {
+			date > 1943.6.1
+			is_subject = no
+		}
+		x = 17
+		y = 8
+		cost = 3
+		completion_reward = {
+			SOV = {
+					add_timed_idea = { idea = Attack_On_German_Airport days = 30 }
+			}
+		}
+}

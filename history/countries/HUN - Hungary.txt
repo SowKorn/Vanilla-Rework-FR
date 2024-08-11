@@ -18,7 +18,7 @@ if = {
 	}
 }
 
-set_research_slots = 4
+set_research_slots = 3
 set_stability = 0.7
 set_war_support = 0.6
 
@@ -107,7 +107,6 @@ if = {
 add_ideas = {
 	No_push_in_winter
 }
-add_ideas = volunteer_brigades
 
 1939.1.1 = {
 	if = {

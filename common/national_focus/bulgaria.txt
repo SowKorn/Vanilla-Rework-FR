@@ -4297,6 +4297,108 @@ focus_tree = {
 			add_ideas = BUL_military_dictatorship
 		}
 	}
+
+	focus = {
+		id = BUL_support_the_spanish_coup
+
+		prerequisite = { focus = BUL_appoint_right_wing_ministers }
+		icon = GFX_focus_intervention_spain_nationalists
+		relative_position_id = BUL_appoint_right_wing_ministers
+		x = -1
+		y = 1
+		cost = 5
+
+		available = {
+			has_civil_war = no
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				SPR_scw_in_progress = yes
+				country_exists = SPA
+				NOT = { has_war_with = SPA }
+			}
+			else = {
+				any_country = {
+					original_tag = SPR
+					has_civil_war = yes
+					NOT = { has_war_with = ROOT }
+					OR = {
+						has_government = fascism
+						has_government = neutrality
+					}
+				}
+			}
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			is_subject = no
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				SPA = {
+					add_opinion_modifier = {
+					    target = BUL
+					    modifier = BUL_helped_in_civil_war
+					}
+					add_manpower = 3000
+					ROOT = {
+						set_variable = { BUL_spanish_tag_aided = PREV }
+					}
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = SPA
+					value = 100
+				}
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = SPA
+					value = 100
+				}
+			}
+			else = {
+				random_country = {
+					limit = {
+						original_tag = SPR
+						has_civil_war = yes
+						OR = {
+							has_government = neutrality
+							has_government = fascism
+						}
+					}
+					add_opinion_modifier = {
+					    target = BUL
+					    modifier = BUL_helped_in_civil_war
+					}
+					add_manpower = 3000
+					ROOT = {
+						set_variable = { BUL_spanish_tag_aided = PREV }
+						add_ai_strategy = {
+							type = befriend
+							id = PREV
+							value = 100
+						}
+						add_ai_strategy = {
+							type = send_volunteers_desire
+							id = PREV
+							value = 100
+						}
+					}
+				}
+			}
+			add_manpower = -3000
+			add_ideas = BUL_volunteers_in_spain_nationalist
+			set_rule = { can_send_volunteers = yes }
+			custom_effect_tooltip = BUL_support_the_spanish_coup_tt
+		}
+	}
+
 	focus = {
 		id = BUL_allow_far_right_organizations
 
@@ -5426,6 +5528,10 @@ focus_tree = {
 					NOT = { has_wargoal_against = TUR }
 					NOT = { is_in_faction_with = TUR }
 				}
+				create_wargoal = {
+					type = annex_everything
+					target = TUR
+				}
 			}
 
 			#Set ideology cosmetic tag to show the appropriate 3D models
@@ -5436,6 +5542,11 @@ focus_tree = {
 				news_event = { id = bftb_news.7 hours = 8 random_hours = 4 }
 			}
 
+			add_ai_strategy = {
+				type = declare_war
+				id = TUR
+				value = 100
+			}
 		}
 	}
 }
