@@ -10265,41 +10265,51 @@ ai_will_do = {
 focus = {
 		id = SOV_Mobilisation_Wave
 		icon = GFX_focus_SOV_restore_cossack_units
-		prerequisite = { focus = SOV_barrier_troops }
-		x = 0
+		x = 46
 		y = 1
-		relative_position_id = SOV_barrier_troops
 		cost = 5
 		
 		available = {
 			casualties > 100
-			surrender_progress > 0.30
+			surrender_progress > 0.35
 		}
 
 		completion_reward = {
-					every_state = {
-						limit = {	
-							AND = {
-								any_neighbor_state = { OR = { is_controlled_by = GER is_controlled_by = ROM is_controlled_by = HUN is_controlled_by = FIN is_controlled_by = ITA is_controlled_by = BUL  is_controlled_by = SPR is_controlled_by = EFR is_controlled_by = SLO is_controlled_by = JAP is_controlled_by = MAN is_controlled_by = RCC } }
-								is_controlled_by = SOV
+			custom_effect_tooltip = SOV_last_chance_tt
+			hidden_effect = {
+					division_template = {
+						name = "Strelkovaya Diviziya"
+						priority = 2
+						division_names_group = SOV_INF_01
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
 							}
-						}
-						create_unit = {
-							division = "division_template = \"Strelkovaya Diviziya - Reinforcements\" start_experience_factor = 0.1 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_2 = { owner = \"SOV\" } artillery_equipment_2 = { owner = \"SOV\" }} "
-							owner = SOV
-						}
-						create_unit = {
-							division = "division_template = \"Strelkovaya Diviziya - Reinforcements\" start_experience_factor = 0.1 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_2 = { owner = \"SOV\" } artillery_equipment_2 = { owner = \"SOV\" }} "
-							owner = SOV
-						}
-						create_unit = {
-							division = "division_template = \"Strelkovaya Diviziya - Reinforcements\" start_experience_factor = 0.1 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_2 = { owner = \"SOV\" } artillery_equipment_2 = { owner = \"SOV\" }} "
-							owner = SOV
-						}
-
+							support = {
+							#recon = { x = 0 y = 0 }
+							engineer = { x = 0 y = 1 }
+							artillery = { x = 0 y = 0 } 	
+							}
 					}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 249 }
+					create_unit = {
+						division = "name = \"Strelkovaya Diviziya\" division_template = \"Strelkovaya Diviziya\" start_experience_factor = 1.0" 
+						owner = SOV
+						count = 50
+					}
+				}
+			}			
 		}
-}
+	}
 focus = {
 		id = SOV_Offensive_Bagration
 		icon = GFX_goal_generic_war_with_comintern
