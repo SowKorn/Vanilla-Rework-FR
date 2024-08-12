@@ -860,7 +860,6 @@ focus_tree = {
 			democratic > 0.95
 		}
 		completion_reward = {
-			add_ideas = wartime_industry_focus
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = USA_general_motors
 		}
