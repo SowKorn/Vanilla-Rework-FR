@@ -5014,7 +5014,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_category_tooltip = 
+			custom_effect_tooltip = Ger_Krieg_plan
+			unlock_decision_category_tooltip = Kriegsplan
 		}
 	}
 
@@ -5046,7 +5047,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_tooltip = 
+			custom_effect_tooltip = GER_decisions_fall_weiss
+			unlock_decision_category_tooltip = GER_execute_fall_weiss
 		}
 	}
 
@@ -5076,7 +5078,8 @@ focus_tree = {
 
 
 		completion_reward = {
-			unlock_decision_tooltip = 
+			custom_effect_tooltip = GER_decisions_fall_gelb
+			unlock_decision_tooltip = GER_execute_fall_gelb
 		}
 	}
 
@@ -5106,7 +5109,8 @@ focus_tree = {
 
 
 		completion_reward = {
-			unlock_decision_tooltip = 
+			custom_effect_tooltip = GER_decisions_fall_rot
+			unlock_decision_tooltip = GER_execute_fall_rot
 		}
 	}
 
@@ -5136,7 +5140,8 @@ focus_tree = {
 
 
 		completion_reward = {
-			unlock_decision_tooltip = 
+			custom_effect_tooltip = GER_decisions_Nordliche_fall
+			unlock_decision_tooltip = GER_execute_Nordliche_fall
 		}
 	}
 
@@ -5167,7 +5172,8 @@ focus_tree = {
 
 
 		completion_reward = {
-			unlock_decision_tooltip = 
+			custom_effect_tooltip = GER_decisions_strafgericht
+			unlock_decision_tooltip = GER_execute_strafgericht
 		}
 	}
 
@@ -5198,7 +5204,8 @@ focus_tree = {
 
 
 		completion_reward = {
-			unlock_decision_tooltip = 
+			custom_effect_tooltip = GER_decisions_unternehmen_Marita
+			unlock_decision_tooltip = GER_execute_unternehmen_Marita
 		}
 	}
 
@@ -5230,7 +5237,8 @@ focus_tree = {
 
 
 		completion_reward = {
-			unlock_decision_tooltip = 
+			custom_effect_tooltip = GER_decisions_fall_blau
+			unlock_decision_tooltip = GER_execute_fall_blau
 		}
 	}
 
@@ -5257,7 +5265,8 @@ focus_tree = {
 
 
 		completion_reward = {
-			unlock_decision_tooltip = 
+			custom_effect_tooltip = GER_decisions_unternehmen_achse
+			unlock_decision_tooltip = GER_unternehmen_achse
 		}
 	}
 }

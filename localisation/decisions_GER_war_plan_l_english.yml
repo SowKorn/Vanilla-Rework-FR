@@ -1,0 +1,37 @@
+﻿l_english:
+ Kriegsplan:0 "Kriegsplan"
+
+ Ger_Krieg_plan:0 "Unlock War plan to conquer Europe"
+
+ GER_execute_fall_weiss:0 "Fall Weiss"
+ GER_execute_fall_weiss_desc:0 "It's time for Polish"
+ GER_decisions_fall_weiss:0 "Unlock Fall Weiss"
+
+ GER_execute_fall_gelb:0 "Fall Gelb"
+ GER_execute_fall_gelb_desc:0 "It's time for Benelux"
+ GER_decisions_fall_gelb:0 "Unlock Fall Gelb"
+
+ GER_execute_Nordliche_fall:0 "Nordliche fall"
+ GER_execute_Nordliche_fall_desc:0 "It's time for Norwegian"
+ GER_decisions_Nordliche_fall:0 "Unlock Nordliche_fall"
+
+ GER_execute_fall_rot:0 "Fall Rot"
+ GER_execute_fall_rot_desc:0 "It's time for French"
+ GER_decisions_fall_rot:0 "Unlock Fall Rot"
+
+ GER_execute_strafgericht:0 "Unternehmen Strafgericht"
+ GER_execute_strafgericht_desc:0 "It's time for Yougoslavian"
+ GER_decisions_strafgericht:0 "Unlock Unternehmen Strafgericht"
+
+ GER_execute_unternehmen_Marita:0 "Unternehmen Marita"
+ GER_execute_unternehmen_Marita_desc:0 "It's time for Greek"
+ GER_decisions_unternehmen_Marita:0 "Unlock Unternehmen Marita"
+
+ GER_execute_fall_blau:0 "Fall Blau"
+ GER_execute_fall_blau_desc:0 "It's time for soviets"
+ GER_decisions_fall_blau:0 "Unlock Fall Blau"
+
+ GER_unternehmen_achse:0 "Unternehmen Achse"
+ GER_unternehmen_achse_desc:0 "We have to take control of Italy before allies" 
+ GER_decisions_unternehmen_achse:0 "Unlock Unternehmen Achse"
+
