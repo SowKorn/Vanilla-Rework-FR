@@ -5048,7 +5048,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = GER_decisions_fall_weiss
-			unlock_decision_category_tooltip = GER_execute_fall_weiss
+			unlock_decision_tooltip = GER_execute_fall_weiss
 		}
 	}
 
