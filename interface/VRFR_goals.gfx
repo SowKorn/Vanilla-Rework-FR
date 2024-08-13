@@ -32,4 +32,8 @@ spriteTypes = {
 		name = "GFX_SS_panzer_elite.dds"
 		texturefile = "gfx/interface/goals/ger/SS_panzer_elite.dds"
 	}
+	SpriteType = {
+		name = "GFX_Yamato_Japan"
+		texturefile = "gfx/interface/goals/jap/Focus_Jap_for_the_empire.dds"
+	}
 }

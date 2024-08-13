@@ -691,7 +691,6 @@
 			}
 		}
 	}
-
 	focus = {
 		id = JAP_alliance_with_siam
 		icon = GFX_goal_generic_major_alliance
@@ -820,6 +819,40 @@
 				unlock_decision_category_tooltip = prospect_for_resources
 			}
 		}
+	}
+	 focus = {
+		id = For_the_Empire
+		icon = GFX_Yamato_Japan
+		prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
+		x = -3
+		y = 8
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_completed_focus =  
+			}
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+					add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 120 }
+				}
 	}
 
 	focus = {
