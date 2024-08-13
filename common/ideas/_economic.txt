@@ -31,8 +31,8 @@ ideas = {
 
 			allowed_to_remove = {
 				IF = {
-					OR = {
-						has_war_support > 0.5
+					OR = { 
+						has_completed_focus = USA_the_giant_wakes
 						has_war = yes
 					}
 				}
@@ -78,9 +78,7 @@ ideas = {
 
 		civilian_economy = {
 			available = {
-				USA = {
-					has_completed_focus = USA_the_giant_wakes
-				}
+			
 			}
 
 
@@ -106,9 +104,6 @@ ideas = {
 
 			available = {
 				has_war_support > 0.15
-				USA = {
-					has_completed_focus = USA_the_giant_wakes
-				}
 
 				if = {
 					limit = {
@@ -177,10 +172,6 @@ ideas = {
 
 			available = {
 				has_war_support > 0.25
-				USA = {
-					has_completed_focus = USA_the_giant_wakes
-				}
-
 
 				if = {
 					limit = {
@@ -217,6 +208,14 @@ ideas = {
 					}
 				}
 			}
+		on_add = {	
+			if = {
+				limit = {
+				    tag = USA  
+					has_completed_focus = USA_the_giant_wakes
+			    }
+			}
+		}
 
 			cost = 150
 			removal_cost = -1
