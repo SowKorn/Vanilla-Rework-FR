@@ -183,7 +183,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 25
-			build_cost_ic = 18
+			build_cost_ic = 25
 			fuel_consumption = 0.16
 		}
 
@@ -205,7 +205,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 38
-			build_cost_ic = 34
+			build_cost_ic = 40
 			fuel_consumption = 0.32
 		}
 
@@ -227,7 +227,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 51
-			build_cost_ic = 50
+			build_cost_ic = 57
 			fuel_consumption = 0.48
 		}
 
@@ -249,7 +249,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 64
-			build_cost_ic = 66
+			build_cost_ic = 75
 			fuel_consumption = 0.64
 		}
 
@@ -271,7 +271,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 90
-			build_cost_ic = 94
+			build_cost_ic = 100
 			fuel_consumption = 0.8
 		}
 
