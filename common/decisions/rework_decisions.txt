@@ -1,0 +1,256 @@
+decisions_category = {
+	
+	xp_decision = {
+
+		icon = GFX_decision_generic_army_support
+
+		fire_only_once = yes
+		
+		complete_effect = {
+				army_experience = 50
+				navy_experience = 50
+				air_experience = 50
+		}
+	}
+
+	refit_decision = {
+
+		icon = GFX_decision_generic_construction
+
+		fire_only_once = yes
+		
+		complete_effect = {
+			add_timed_idea = { idea = ENG_expand_the_repair_yards days = 365 }
+
+		}
+	}
+
+	ENG_GUA_POL = {
+	icon = GFX_decision_generic_political_discourse
+
+		available = {
+		}
+
+		allowed = {
+			tag = ENG
+		}
+
+		fire_only_once = yes
+
+		complete_effect  = {
+		ENG = {
+		   give_guarantee = POL
+		   }
+		}
+	}	
+
+}
+
+vassal_decisions_category = {
+
+	SOV_vassal_MON = {
+	icon = GFX_decision_eng_trade_unions_support
+		
+		cost = 0
+
+		allowed = {
+			tag = SOV
+		}
+
+		fire_only_once = yes
+
+		complete_effect  = {
+					set_autonomy = { target = MON autonomy_state = autonomy_collaboration_government }
+
+			
+		}
+	}
+
+	JAP_vassal_MAN = {
+	icon = GFX_decision_jap_conquer_china
+		
+		cost = 0
+
+		allowed = {
+			tag = JAP
+		}
+
+		fire_only_once = yes
+
+		complete_effect  = {
+					set_autonomy = { target = MAN autonomy_state = autonomy_collaboration_government }
+
+			
+		}
+	}
+
+	AST_vassal_NZL = {
+	icon = GFX_decision_eng_trade_unions_support
+		
+		cost = 0
+
+		available = {
+		}
+
+		allowed = {
+			tag = AST
+		}
+
+		fire_only_once = yes
+
+		complete_effect  = {
+					set_autonomy = { target = NZL autonomy_state = autonomy_collaboration_government }
+
+			
+		}
+	}
+
+	GER_vassal_ROM = {
+	icon = GFX_decision_ger_reichskommissariats
+		
+		cost = 0
+
+		allowed = {
+			tag = GER
+		}
+
+		complete_effect  = {
+					set_autonomy = { target = ROM autonomy_state = autonomy_collaboration_government }
+
+			
+		}
+	}
+	GER_vassal_HUN = {
+	icon = GFX_decision_ger_reichskommissariats
+		
+		cost = 0
+
+		allowed = {
+			tag = GER
+		}
+
+		complete_effect  = {
+					set_autonomy = { target = HUN autonomy_state = autonomy_collaboration_government }
+
+			
+		}
+	}
+	GER_vassal_BUL = {
+	icon = GFX_decision_ger_reichskommissariats
+		
+		cost = 0
+
+		allowed = {
+			tag = GER
+		}
+
+		complete_effect  = {
+					set_autonomy = { target = BUL autonomy_state = autonomy_collaboration_government }
+
+			
+		}
+	}
+
+	ENG_vassal_IRE = {
+	icon = GFX_decision_eng_trade_unions_support
+		
+		cost = 150
+
+		available = {
+        ENG = {
+        has_war = yes
+        }		
+		}
+
+		allowed = {
+			tag = ENG
+		}
+
+		fire_only_once = yes
+
+		complete_effect  = {
+					set_autonomy = { target = IRE autonomy_state = autonomy_collaboration_government }
+			
+		}
+	}
+
+	ENG_vassal_RAJ = {
+	icon = GFX_decision_eng_trade_unions_demand
+		
+		cost = 0
+
+		allowed = {
+			tag = ENG
+		}
+
+		fire_only_once = yes
+
+		complete_effect  = {
+					set_autonomy = { target = RAJ autonomy_state = autonomy_collaboration_government }
+		}
+	}
+
+	ENG_vassal_CAN = {
+	icon = GFX_decision_eng_trade_unions_demand
+		
+		cost = 0
+
+		allowed = {
+			tag = ENG
+		}
+
+		fire_only_once = yes
+
+		complete_effect  = {
+					set_autonomy = { target = CAN autonomy_state = autonomy_collaboration_government }
+		}
+	}
+
+	ENG_vassal_AST = {
+	icon = GFX_decision_eng_trade_unions_demand
+		
+		cost = 0
+
+		allowed = {
+			tag = ENG
+		}
+
+		fire_only_once = yes
+
+		complete_effect  = {
+					set_autonomy = { target = AST autonomy_state = autonomy_collaboration_government }
+		}
+	}
+
+	ENG_vassal_SAF = {
+	icon = GFX_decision_eng_trade_unions_demand
+		
+		cost = 0
+
+		allowed = {
+			tag = ENG
+		}
+
+		fire_only_once = yes
+
+		complete_effect  = {
+					set_autonomy = { target = SAF autonomy_state = autonomy_collaboration_government }
+		}
+	}
+
+	ENG_vassal_NZL = {
+	icon = GFX_decision_eng_trade_unions_demand
+		
+		cost = 0
+
+		allowed = {
+			tag = ENG
+		}
+
+		fire_only_once = yes
+
+		complete_effect  = {
+					set_autonomy = { target = NZL autonomy_state = autonomy_collaboration_government }
+		}
+	}
+}

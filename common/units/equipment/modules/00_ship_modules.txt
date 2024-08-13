@@ -426,7 +426,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = capital_ship
 		add_stats = {
-			hg_attack = 6.0
+			hg_attack = 6.5
+			lg_attack = 2.0
 			build_cost_ic = 650
 		}
 		multiply_stats = {
@@ -435,6 +436,7 @@ equipment_modules = {
 		}
 		add_average_stats = {
 			hg_armor_piercing = 22
+			lg_armor_piercing = 6	
 		}
 		build_cost_resources = {
 			steel = 1
@@ -464,7 +466,8 @@ equipment_modules = {
 
 		add_equipment_type = capital_ship
 		add_stats = {
-			hg_attack = 8.0
+			hg_attack = 7.5
+			lg_attack = 2.5
 			build_cost_ic = 700
 		}
 		multiply_stats = {
@@ -502,7 +505,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			hg_attack = 10.0
+			hg_attack = 8.5
+			lg_attack = 3
 			build_cost_ic = 725
 		}
 		multiply_stats = {
@@ -546,7 +550,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			hg_attack = 12.0
+			hg_attack = 10.0
+			lg_attack = 3.5
 			build_cost_ic = 800
 		}
 		multiply_stats = {
@@ -743,7 +748,7 @@ equipment_modules = {
 		
 		add_average_stats = {
 			lg_armor_piercing = 7
-			max_strength = 15
+			max_strength = 10
 		}
 
 		forbid_module_categories = {
@@ -1847,7 +1852,7 @@ equipment_modules = {
 
 		add_stats = {
 			torpedo_attack = 25
-			naval_torpedo_hit_chance_factor = 0.04
+			naval_torpedo_hit_chance_factor = 0.02
 			build_cost_ic = 120
 		}
 		multiply_stats = {
@@ -1882,7 +1887,7 @@ equipment_modules = {
 		add_stats = {
 			torpedo_attack = 31
 			build_cost_ic = 150
-			naval_torpedo_hit_chance_factor = 0.06
+			naval_torpedo_hit_chance_factor = 0.04
 		}
 		multiply_stats = {
 			naval_speed = -0.03			
@@ -1906,7 +1911,7 @@ equipment_modules = {
 		add_stats = {
 			torpedo_attack = 37
 			build_cost_ic = 180
-			naval_torpedo_hit_chance_factor = 0.08
+			naval_torpedo_hit_chance_factor = 0.06
 		}
 		multiply_stats = {
 			naval_speed = -0.04			
@@ -1983,30 +1988,6 @@ equipment_modules = {
 
 		multiply_stats = {
 			naval_speed = -0.03			
-		}
-
-		can_convert_from = {
-			module_category = ship_torpedo_sub
-			convert_cost_ic = 60
-		}
-		critical_parts = { damaged_torpedoes }
-	}
-
-	ship_torpedo_sub_4 = {
-		abbreviation = "sco"
-		category = ship_torpedo_sub
-		parent = ship_torpedo_sub_3
-		
-		sfx = sfx_ui_sd_module_turret
-
-		add_stats = {
-			torpedo_attack = 28
-			build_cost_ic = 140
-			naval_torpedo_hit_chance_factor = 0.02
-		}
-
-		multiply_stats = {
-			naval_speed = -0.04			
 		}
 
 		can_convert_from = {
@@ -2475,8 +2456,8 @@ equipment_modules = {
 		}
 		add_stats = {
 			armor_value = 60
-			naval_torpedo_enemy_critical_chance_factor = -0.25
-			naval_torpedo_damage_reduction_factor = 0.25
+			naval_torpedo_enemy_critical_chance_factor = -0.15
+			naval_torpedo_damage_reduction_factor = 0.15
 		}
 		dismantle_cost_ic = 8200
 		can_convert_from = {
