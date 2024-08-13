@@ -264,7 +264,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = ITA_ministry_of_italian_africa
-		cost = 5
+		cost = 2
 		available = {
 			OR = {
 				any_controlled_state = {
@@ -579,7 +579,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ITA_ministry_of_italian_africa
-		cost = 5
+		cost = 2
 		available = {
 			OR = {
 				any_controlled_state = {
@@ -885,7 +885,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_ministry_of_italian_africa
-		cost = 5
+		cost = 2
 		available = {
 			OR = {
 				550 = {	is_fully_controlled_by = ROOT }
@@ -918,7 +918,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = ITA_ministry_of_italian_africa
-		cost = 5
+		cost = 2
 		available = {
 			OR = {
 				559 = { is_fully_controlled_by = ROOT }
@@ -2748,7 +2748,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			add_to_variable = { ITA_iri_production_speed_arms_factory_factor = 0.5 }
+			add_to_variable = { ITA_iri_production_speed_arms_factory_factor = 0.05 }
 			custom_effect_tooltip = ITA_steel_industry_in_terni_ricostruzione_industriale_tt
 			2 = {
 				add_extra_state_shared_building_slots = 2
