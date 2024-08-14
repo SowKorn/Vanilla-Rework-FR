@@ -1,0 +1,14 @@
+﻿add_namespace = Researchslots
+
+country_event = {
+	id = Researchslots.1
+	title = "+1 Research Slots"
+	desc = "Your scientists have invented a substance which allows them to conduct even more research. You can now assign one more technologies to research."
+	picture = GFX_report_event_physics_lab_02	
+	is_triggered_only = yes	
+	option = {
+		name = "Awesome!"
+		add_research_slot = 1
+		set_country_flag = research_slots		
+	}
+}
