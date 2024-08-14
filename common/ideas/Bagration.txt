@@ -1,0 +1,25 @@
+ideas = {
+    country = {
+        Bagration_Ope = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_core_attack_factor = 0.15
+				coordination_bonus = 0.10
+				breakthrough_factor = 0.15
+				army_core_defence_factor = 0.15
+				
+				
+			}
+		}
+    }
+}

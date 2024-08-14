@@ -264,7 +264,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = ITA_ministry_of_italian_africa
-		cost = 5
+		cost = 2
 		available = {
 			OR = {
 				any_controlled_state = {
@@ -579,7 +579,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ITA_ministry_of_italian_africa
-		cost = 5
+		cost = 2
 		available = {
 			OR = {
 				any_controlled_state = {
@@ -885,7 +885,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_ministry_of_italian_africa
-		cost = 5
+		cost = 2
 		available = {
 			OR = {
 				550 = {	is_fully_controlled_by = ROOT }
@@ -918,7 +918,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = ITA_ministry_of_italian_africa
-		cost = 5
+		cost = 2
 		available = {
 			OR = {
 				559 = { is_fully_controlled_by = ROOT }
@@ -2748,7 +2748,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			add_to_variable = { ITA_iri_production_speed_arms_factory_factor = 0.025 }
+			add_to_variable = { ITA_iri_production_speed_arms_factory_factor = 0.05 }
 			custom_effect_tooltip = ITA_steel_industry_in_terni_ricostruzione_industriale_tt
 			2 = {
 				add_extra_state_shared_building_slots = 2
@@ -2868,7 +2868,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ITA_industria_della_gomma_sintetica
-		cost = 5
+		cost = 7.1
 		available = {
 		}
 
@@ -2887,10 +2887,10 @@ focus_tree = {
 					}
 				}
 				158 = { #PIEDMONT (Torino, Genoa)
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -2906,10 +2906,10 @@ focus_tree = {
 						}
 					}
 					prioritize = { 736 852 } #LITORALE as main fallback
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -2927,10 +2927,10 @@ focus_tree = {
 					}
 				}
 				159 = { #LOMBARDY (Milano, Brescia)
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -2967,10 +2967,10 @@ focus_tree = {
 					}
 				}
 				161 = { #EMILIA ROMAGNA (Bologna)
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -3007,10 +3007,10 @@ focus_tree = {
 					}
 				}
 				160 = { #VENETO (Venice )
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
-						type = dockyard
-						level = 1
+						type = arms_factory
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -3045,7 +3045,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_industria_della_gomma_sintetica
-		cost = 5
+		cost = 7.1
 		available = {
 		}
 
@@ -3070,19 +3070,14 @@ focus_tree = {
 						}
 						add_building_construction = {
 							type = infrastructure
-							level = 1
+							level = 2
 							instant_build = yes						
 						}
 					}
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 					add_building_construction = {
@@ -3110,19 +3105,19 @@ focus_tree = {
 						}
 						add_building_construction = {
 							type = infrastructure
-							level = 1
+							level = 2
 							instant_build = yes						
 						}
 					}
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 3
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 
 						instant_build = yes
 					}
 				}
@@ -3139,19 +3134,19 @@ focus_tree = {
 						}
 						add_building_construction = {
 							type = infrastructure
-							level = 1
+							level = 2
 							instant_build = yes						
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = dockyard
-						level = 1
+						level = 3
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = naval_base
-						level = 2
+						level = 3
 						instant_build = yes
 						province = 9784					
 					}
@@ -3170,19 +3165,20 @@ focus_tree = {
 						}
 						add_building_construction = {
 							type = infrastructure
-							level = 1
+							level = 2
 							instant_build = yes						
 						}
 					}
 					add_building_construction = {
 						type = naval_base
-						level = 1
+						level = 3
 						instant_build = yes
 						province = 4159					
 					}
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
-						type = naval_base
-						level = 1
+						type = dockyard
+						level = 3
 						instant_build = yes
 						province = 7059					
 					}
@@ -3200,12 +3196,12 @@ focus_tree = {
 						}
 						add_building_construction = {
 							type = infrastructure
-							level = 1
+							level = 2
 							instant_build = yes						
 						}
 						add_building_construction = {
-							type = naval_base
-							level = 2
+							type = dockyard
+							level = 3
 							instant_build = yes
 							province = 11773					
 						}
@@ -6745,42 +6741,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = ITA_cooperation_programs
-		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = ITA_supermarina }
-
-		x = 6
-		y = 1
-		relative_position_id = ITA_supermarina
-		cost = 5
-		available = {
-		}
-
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP}
-
-		completion_reward = {
-			navy_experience = 25
-			custom_effect_tooltip = ITA_cooperation_programs_decisions_tt
-			if = { #Historical agreement with Sweden
-				limit = {
-					NOT = {
-						has_war_with = SWE
-						any_enemy_country = { is_in_faction_with = SWE }
-					}
-				}
-				SWE = { country_event = { id = BBA_italy_naval_cooperation_programs.08 hours = 1 } }
-				custom_effect_tooltip = if_they_accept
-				effect_tooltip = {
-					custom_effect_tooltip = ITA_cooperation_programs_deal_sweden_tt
-					add_timed_idea = {
-						idea = ITA_sold_obsolete_escort_ships_ns
-						days = 365
-					}
-				}
-			}
-		}
-	}
 
 	focus = {
 		id = ITA_cruiser_submarines

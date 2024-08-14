@@ -1,0 +1,15 @@
+category = {
+ name = "SPC"
+ soundeffects = {
+	lose_of_berlin
+    lose_of_gibralatar
+    lose_of_singapour
+    lose_of_tokyo
+    war_with_china
+    ww2_begin
+    lose_of_tokyo_axe
+    Asia_war
+    Call_to_war
+    Barb
+ }
+}

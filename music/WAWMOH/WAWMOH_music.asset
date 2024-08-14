@@ -148,4 +148,10 @@ music = {
 	volume = 1.5
 }
 
+music = {
+	name = "Nacht Der Untoten"
+	file = "01 - Nacht Der Untoten.ogg"
+	volume = 1.5
+}
+
 

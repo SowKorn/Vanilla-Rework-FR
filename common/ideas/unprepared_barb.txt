@@ -1,0 +1,29 @@
+ideas = {
+    country = {
+        unprepared_barb = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = -0.1
+				army_morale = -0.05
+				breakthrough_factor = -0.1
+				pocket_penalty = 0.1
+				recon_factor = -0.15
+				army_org_regain = -0.05
+				army_morale = -0.1
+				coordination_bonus = -0.1
+				air_superiority_bonus_in_combat = -0.1
+				air_cas_efficiency = -0.05
+			}
+		}
+    }
+}

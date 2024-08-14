@@ -419,7 +419,7 @@
 		}
 
 		available = {
-			date > 1941.1.1
+			date > 1941.6.1
 		}
 
 		bypass = {
@@ -482,7 +482,7 @@
 		}
 
 		available = {
-			date > 1941.1.1
+			date > 1941.6.1
 		}
 
 		bypass = {
@@ -689,9 +689,9 @@
 					generator = { 671 670 286 741 }
 				}
 			}
+			add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 120 }
 		}
 	}
-
 	focus = {
 		id = JAP_alliance_with_siam
 		icon = GFX_goal_generic_major_alliance
@@ -819,8 +819,10 @@
 				limit = { has_dlc = "Waking the Tiger" }
 				unlock_decision_category_tooltip = prospect_for_resources
 			}
+			
 		}
 	}
+	 
 
 	focus = {
 		id = JAP_sign_tripartite_pact
@@ -1146,6 +1148,7 @@
 				}
 				set_state_flag = JAP_nationalize_war_industry_IC
 			}
+			add_timed_idea = { idea = JAP_industrialisation days = 1850 }	
 		}
 	}
 
@@ -1217,6 +1220,7 @@
 				uses = 2
 				category = synth_resources	
 			}
+			add_timed_idea = { idea = JAP_industrialisation_two days = 200 }
 		}
 	}
 

@@ -42,65 +42,10 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = GER__Invest_In_Flugabwehrkanone
-		icon = GFX_focus_generic_air_defense
-		prerequisite = { focus = GER_four_year_plan }
-		relative_position_id = GER_four_year_plan
-		x = -2
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 12
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			add_ideas = Flugabwehrkanone
-			add_tech_bonus = {
-				name = GER_four_year_plan
-				bonus = 1.0
-				uses = 2
-				category = cat_anti_air
-			}
-			every_controlled_state = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 2
-					instant_build = yes
-				}
-			}	
-		}
-	}
+	
 
-	focus = {
-		id = GER__ressources
-		icon = GFX_focus_generic_resource_extraction
-		prerequisite = { focus = GER_four_year_plan }
-		relative_position_id = GER_four_year_plan
-		x = 2
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 12
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			64 = {
-				add_resource = {
-					type = steel
-					amount = 112
-				}
-				add_resource = {
-					type = tungsten
-					amount = 15
-				}
-				add_resource = {
-					type = chromium
-					amount = 26
-				}
-			}
-		}
-	}
+	
+	
 
 	focus = {
 		id = GER_west_wall
@@ -1211,7 +1156,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = GER_four_year_plan
-		cost = 5
+		cost = 7.2
 		
 		ai_will_do = {
 			factor = 9
@@ -1262,6 +1207,7 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			add_ideas = GER_civilian_expension
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1403,7 +1349,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_autarky
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 4
 		}
@@ -1680,6 +1626,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			add_ideas = GER_military_production
 			
 			random_owned_controlled_state = {
 				limit = {
@@ -1890,20 +1837,20 @@ focus_tree = {
 					modifier = GER_align_hungary
 				}
 				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 4
 						instant_build = yes
 					}
 				}
 			}	
 			BUL = {
 				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 4
 						instant_build = yes
 					}
 				}
@@ -1984,10 +1931,10 @@ focus_tree = {
 			}
 			ROM = {
 				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 4
 						instant_build = yes
 					}
 				}
@@ -2004,10 +1951,10 @@ focus_tree = {
 			}
 			ITA = {
 				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 4
 						instant_build = yes
 					}
 				}
@@ -3199,6 +3146,16 @@ focus_tree = {
 		bypass = {
 			has_war_with = SOV
 		}
+
+		completion_reward = {
+			SOV = {
+					add_timed_idea = { idea = unprepared_barb days = 120 }
+				}
+				MON = {
+					add_timed_idea = { idea = unprepared_barb days = 120 }
+				}
+			}	
+
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -5033,6 +4990,283 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+		}
+	}
+
+	focus = {
+		id = GER_war_plans_division
+		icon = GFX_goal_generic_position_armies
+		x = 38
+		y = 0
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_completed_focus = GER_danzig_or_war
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = Ger_Krieg_plan
+			unlock_decision_category_tooltip = Kriegsplan
+		}
+	}
+
+	focus = {
+		id = GER_fall_weiss
+		icon = GFX_fall_weiss
+		x = 0
+		y = 1
+		prerequisite = { focus = GER_war_plans_division }
+		relative_position_id = GER_war_plans_division
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+			
+		}
+			
+		bypass = {
+			POL {
+				exists = no
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = GER_decisions_fall_weiss
+			unlock_decision_tooltip = GER_execute_fall_weiss
+		}
+	}
+
+	focus = {
+		id = GER_fall_gelb
+		icon = GFX_fall_gelb
+		prerequisite = { focus = GER_war_plans_division }
+		available = {
+			
+		}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		x = -2
+		y = 1
+		relative_position_id = GER_war_plans_division
+		cost = 2
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		bypass = {
+			BEL {
+				exists = no
+			}
+		}
+
+
+		completion_reward = {
+			custom_effect_tooltip = GER_decisions_fall_gelb
+			unlock_decision_tooltip = GER_execute_fall_gelb
+		}
+	}
+
+	focus = {
+		id = GER_fall_rot
+		icon = GFX_focus_attack_france
+		prerequisite = { focus = GER_fall_gelb }
+		available = {
+			
+		}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		x = -2
+		y = 2
+		relative_position_id = GER_war_plans_division
+		cost = 2
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		bypass = {
+			FRA {
+				exists = no
+			}
+		}
+
+
+		completion_reward = {
+			custom_effect_tooltip = GER_decisions_fall_rot
+			unlock_decision_tooltip = GER_execute_fall_rot
+		}
+	}
+
+	focus = {
+		id = GER_Nordliche_fall
+		icon = GFX_Nordliche_fall
+		prerequisite = { focus = GER_war_plans_division }
+		available = {
+			
+		}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		x = 2
+		y = 1
+		relative_position_id = GER_war_plans_division
+		cost = 2
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		bypass = {
+			NOR {
+				exists = no
+			}
+		}
+
+
+		completion_reward = {
+			custom_effect_tooltip = GER_decisions_Nordliche_fall
+			unlock_decision_tooltip = GER_execute_Nordliche_fall
+		}
+	}
+
+	focus = {
+		id = GER_strafgericht
+		icon = GFX_strafgericht
+		prerequisite = { focus = GER_fall_rot }
+		relative_position_id = GER_fall_rot
+		available = {
+			
+		}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		x = -2
+		y = 3
+		relative_position_id = GER_war_plans_division
+		cost = 2
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		bypass = {
+			YUG {
+				exists = no
+			}
+		}
+
+
+		completion_reward = {
+			custom_effect_tooltip = GER_decisions_strafgericht
+			unlock_decision_tooltip = GER_execute_strafgericht
+		}
+	}
+
+	focus = {
+		id = GER_unternehmen_Marita
+		icon = GFX_unternehmen_Marita
+		prerequisite = { focus = GER_strafgericht }
+		relative_position_id = GER_strafgericht
+		available = {
+			
+		}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		x = -2
+		y = 4
+		relative_position_id = GER_war_plans_division
+		cost = 2
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		bypass = {
+			GRE {
+				exists = no
+			}
+		}
+
+
+		completion_reward = {
+			custom_effect_tooltip = GER_decisions_unternehmen_Marita
+			unlock_decision_tooltip = GER_execute_unternehmen_Marita
+		}
+	}
+
+	focus = {
+		id = GER_fall_blau
+		icon = GFX_focus_attack_soviet
+		prerequisite = { focus = GER_fall_weiss }
+		relative_position_id = GER_fall_weiss
+
+		available = {
+			date > 1942.5.1
+		}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		x = 0
+		y = 2
+		relative_position_id = GER_war_plans_division
+		cost = 3
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		bypass = {
+			SOV {
+				exists = no
+			}
+		}
+
+
+		completion_reward = {
+			custom_effect_tooltip = GER_decisions_fall_blau
+			unlock_decision_tooltip = GER_execute_fall_blau
+		}
+	}
+
+	focus = {
+		id = GER_unternehmen_achse
+		icon = GFX_unternehmen_achse
+		prerequisite = { focus = GER_war_plans_division }
+		relative_position_id = GER_war_plans_division
+
+		available = {
+			ITA = {
+				has_civil_war = yes
+			}
+		}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		x = 4
+		y = 1
+		cost = 2
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+
+		completion_reward = {
+			custom_effect_tooltip = GER_decisions_unternehmen_achse
+			unlock_decision_tooltip = GER_unternehmen_achse
 		}
 	}
 }

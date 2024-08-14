@@ -1,24 +1,24 @@
 #reload countrycolors
 
 GER = {
-	color = HSV { 0 0 0 }
-	color_ui = rgb { 0 0 0 }
+	color_ui = rgb { 35 49 35}
+	color = rgb { 35 49 35 }
 }
 ENG = {
-	color = rgb { 182 34 2 }
-	color_ui = rgb { 182 34 2}
+	color = rgb { 165 0 0 }
+	color_ui = rgb { 165 0 0 }
 }
 SOV = {
-	color = rgb { 171 31 0 }
-	color_ui = rgb { 171 31 0 }
+	color = rgb { 188 37 37 }
+	color_ui = rgb { 188 37 37 }
 }
 SWE = {
 	color = rgb { 36 132 247 }
 	color_ui = rgb { 47 172 255 }
 }
 FRA = {
-	color = rgb { 3 3 226 }
-	color_ui = rgb { 3 3 226 }
+	color = rgb { 2 47 178 }
+	color_ui = rgb { 2 47 178 }
 }
 LUX = {
 	color = rgb { 65 175 179 }
@@ -58,8 +58,8 @@ SPR = {
 	color_ui = rgb { 255 255 122 }
 }
 ITA = {
-	color = rgb { 27 85 0 }
-	color_ui = rgb { 27 85 0 }
+	color = rgb { 2 104 1 }
+	color_ui = rgb { 2 104 1 }
 }
 ROM = {
 	color = rgb { 215 196 72 }
@@ -114,7 +114,7 @@ HUN = {
 	color_ui = rgb { 255 164 127 }
 }
 AFG = {
-	color = rgb { 65 160 167 }
+	color = rgb { 64 160 167 }
 	color_ui = rgb { 83 208 217 }
 }
 ARG = {
@@ -138,12 +138,12 @@ BRA = {
 	color_ui = rgb { 99 189 82 }
 }
 CAN = {
-	color = rgb { 233 59 59 }
+	color = rgb { 233  59  59 }
 	color_ui = rgb { 155 62 51 }
 }
 CHI = {
-	color = hsv { 30 140 181 } 
-	color_ui = hsv {  30 140 181 }
+	color = rgb { 0 85 170  } #255 244 190
+	color_ui = rgb { 0 85 170  }
 }
 CHL = {
 	color = rgb { 155 101 107 }
@@ -182,9 +182,9 @@ IRQ = {
 	color_ui = rgb { 231 148 129 }
 }
 JAP = {
-	color = hsv { 171 171 21 }
-	color_ui = hsv { 171 171 21 }
-}	
+	color = rgb { 221  178  83 }
+	color_ui = rgb { 221  178  83 }
+}
 LIB = {
 	color = rgb { 152 130 191 }
 	color_ui = rgb { 198 169 248 }
@@ -254,8 +254,8 @@ YUN = {
 	color_ui = rgb { 222 247 198 }
 }
 USA = {
-	color = rgb { 0 72 144 }
-	color_ui = rgb {  0 72 144  }
+	color = rgb { 20 78 194 }
+	color_ui = rgb { 20 78 194 }
 }
 MON = {
 	#color = HSV { 0.1 0.15 0.4 }
@@ -454,6 +454,10 @@ BOT = {
 PAK = {
 	color = rgb { 21 38 66 }
 	color_ui = rgb { 21 38 66 }
+}
+NEU = {
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
 }
 #WGR = {
 #    color = rgb { 195 236 230 } # The colors are set to be more are less what we are used to

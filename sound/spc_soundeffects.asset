@@ -1,0 +1,89 @@
+soundeffect = {
+	name = "lose_of_berlin"
+	sounds = {
+		sound =
+			lose_of_berlin
+	}
+	volume = 1.4
+}
+
+soundeffect = {
+	name = "lose_of_gibralatar"
+	sounds = {
+		sound =
+			lose_of_gibralatar
+	}
+	volume = 1.4
+}
+
+soundeffect = {
+	name = "lose_of_singapour"
+	sounds = {
+		sound =
+			lose_of_singapour
+	}
+	volume = 1.4
+}
+
+soundeffect = {
+	name = "lose_of_tokyo"
+	sounds = {
+		sound =
+			lose_of_tokyo
+	}
+	volume = 1.4
+}
+
+soundeffect = {
+	name = "war_with_china"
+	sounds = {
+		sound =
+			war_with_china
+	}
+	volume = 1.4
+}
+
+soundeffect = {
+	name = "ww2_begin"
+	sounds = {
+		sound =
+			ww2_begin
+	}
+	volume = 1.4
+}
+
+soundeffect = {
+	name = "lose_of_tokyo_axe"
+	sounds = {
+		sound =
+			lose_of_tokyo_axe
+	}
+	volume = 1.4
+}
+
+soundeffect = {
+	name = "Asia_war"
+	sounds = {
+		sound =
+			Asia_war
+	}
+	volume = 1.4
+}
+
+soundeffect = {
+	name = "Call_to_war"
+	sounds = {
+		sound =
+			Call_to_war
+	}
+	volume = 1.4
+}
+
+soundeffect = {
+	name = "Barb"
+	sounds = {
+		sound =
+			Barb
+	}
+	volume = 1.4
+}

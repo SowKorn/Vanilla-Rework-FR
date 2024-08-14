@@ -118,6 +118,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			add_ideas = USA_civilian_expension
 			add_political_power = 150
 		}
 	}
@@ -668,14 +669,14 @@ focus_tree = {
 					is_core_of = ROOT
 					free_building_slots = {
 						building = arms_factory
-						size > 2
+						size > 5
 						include_locked = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 8
 					instant_build = yes
 				}
 				set_state_flag = USA_arsenal_of_democracy_3AF
@@ -692,7 +693,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 8
 					instant_build = yes
 				}
 				set_state_flag = USA_arsenal_of_democracy_3AF
@@ -703,7 +704,7 @@ focus_tree = {
 					dockyard > 0
 					free_building_slots = {
 						building = dockyard
-						size > 2
+						size > 4
 						include_locked = yes
 					}
 				}
@@ -859,7 +860,6 @@ focus_tree = {
 			democratic > 0.95
 		}
 		completion_reward = {
-			add_ideas = wartime_industry_focus
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = USA_general_motors
 		}
@@ -933,10 +933,10 @@ focus_tree = {
 						region = 197
 					}
 				}
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 10
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 10
 					instant_build = yes
 				}
 				set_state_flag = USA_military_construction_5MF

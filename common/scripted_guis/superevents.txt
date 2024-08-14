@@ -1,0 +1,62 @@
+scripted_gui = {
+  new_scripted_gui = {
+    window_name = "superevents"
+    context_type = player_context
+
+    visible = {
+		has_global_flag = SE_superevents_activate
+    }
+
+    effects = {
+		superevents_button_click = {
+			clr_global_flag = SE_superevents_activate
+			#superevents
+			clr_global_flag = SE_world_war_ii
+			clr_global_flag = SE_gerpol_war
+			clr_global_flag = SE_gersov_war
+			clr_global_flag = SE_pacific_war
+		}
+    }
+
+    triggers = {
+		supereventsbg_test_visible = {
+			has_global_flag = SE_test
+		}
+		#superevents
+		superevents_world_war_ii_visible = {
+			OR = {
+				has_global_flag = SE_world_war_ii
+				has_global_flag = SE_gerpol_war
+			}
+		}
+		superevents_gersov_war_visible = {
+			has_global_flag = SE_gersov_war
+		}
+		superevents_pacific_war_visible = {
+			has_global_flag = SE_pacific_war
+    	}
+
+   	 dynamic_lists = {
+		}
+
+     properties = {
+    	}
+
+     ai_enabled = {
+		always = no
+    	}
+
+     ai_test_interval = 290  # The higher, the long it takes the ai to do actions
+	 ai_test_variance = 0.5
+	
+     ai_check = {
+    	}
+	
+     ai_check_scope = {
+    	}
+	
+   	 ai_weights = {
+    	}
+  	 }
+	}
+}

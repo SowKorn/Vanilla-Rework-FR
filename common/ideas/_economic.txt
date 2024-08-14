@@ -15,9 +15,9 @@ ideas = {
 			modifier = {
 				consumer_goods_expected_value = 0.50
 				production_speed_industrial_complex_factor = -0.5
-				production_speed_arms_factory_factor = -0.5
-				production_speed_dockyard_factor = -0.5
-				conversion_cost_civ_to_mil_factor = 0.5
+				production_speed_arms_factory_factor = -0.7
+				production_speed_dockyard_factor = -0.7
+				conversion_cost_civ_to_mil_factor = 0.7
 				conversion_cost_mil_to_civ_factor = 0.5
 				generate_wargoal_tension = 1.00
 				join_faction_tension = 0.20
@@ -31,8 +31,8 @@ ideas = {
 
 			allowed_to_remove = {
 				IF = {
-					OR = {
-						has_war_support > 0.5
+					OR = { 
+						has_completed_focus = USA_the_giant_wakes
 						has_war = yes
 					}
 				}
@@ -51,9 +51,9 @@ ideas = {
 			modifier = {
 				consumer_goods_expected_value = 0.4
 				production_speed_industrial_complex_factor = -0.4
-				production_speed_arms_factory_factor = -0.4
-				production_speed_dockyard_factor = -0.4
-				conversion_cost_civ_to_mil_factor= 0.4
+				production_speed_arms_factory_factor = -0.5
+				production_speed_dockyard_factor = -0.5
+				conversion_cost_civ_to_mil_factor= -0.1
 				conversion_cost_mil_to_civ_factor = 0.4
 				generate_wargoal_tension = 1.00
 				join_faction_tension = 0.20
@@ -77,6 +77,9 @@ ideas = {
 		}
 
 		civilian_economy = {
+			available = {
+			
+			}
 
 
 			cost = 150
@@ -101,6 +104,7 @@ ideas = {
 
 			available = {
 				has_war_support > 0.15
+
 				if = {
 					limit = {
 						original_tag = HUN
@@ -204,6 +208,14 @@ ideas = {
 					}
 				}
 			}
+		on_add = {	
+			if = {
+				limit = {
+				    tag = USA  
+					has_completed_focus = USA_the_giant_wakes
+			    }
+			}
+		}
 
 			cost = 150
 			removal_cost = -1

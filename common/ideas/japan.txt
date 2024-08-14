@@ -246,6 +246,46 @@ ideas = {
 				consumer_goods_factor = 0.10
 			}
 		}
+		JAP_industrialisation = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = GFX_focus_generic_industry_3
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.30
+				production_speed_dockyard_factor = 0.30
+
+			}
+		}
+		JAP_industrialisation_two = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = GFX_focus_generic_industry_3
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.10
+				production_speed_dockyard_factor = 0.20
+
+			}
+		}
 
 		JAP_zaibatsus_empowered = {
 
@@ -1147,13 +1187,20 @@ ideas = {
 			picture = generic_navy_carrier_bonus
 			
 			modifier = {
-				port_strike = 1
-				carrier_capacity_penalty_reduction = -0.5
-				sortie_efficiency = 0.5
-				naval_strike_attack_factor = 0.12
-				naval_strike_targetting_factor = 0.12
-				naval_strike_agility_factor = 0.12
+				port_strike = 0.5
+				naval_strike_attack_factor = 0.15
+				naval_strike_targetting_factor = 0.15
+				navy_anti_air_attack_factor = 0.1
+				convoy_escort_efficiency = 0.2
+				convoy_retreat_speed = 0.3
+				no_supply_grace = 48
+				army_attack_factor = 0.2
+				fortification_damage = 0.2
+
 			}
+			removal = {
+        days = 90 
+    }
 		}
 
 		JAP_german_rocketry = {

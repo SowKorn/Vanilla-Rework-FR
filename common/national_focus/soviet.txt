@@ -1742,6 +1742,7 @@ focus_tree = {
 		x = 10
 		y = 0
 		relative_position_id = SOV_infrastructure_effort_nsb
+		prerequisite = { focus = SOV_desperate_measures }
 		cost = 5
 
 		ai_will_do = {
@@ -5970,6 +5971,7 @@ focus_tree = {
 		id = SOV_military_reorganization
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = SOV_rehabilitated_military }
+		prerequisite = { focus = SOV_desperate_measures }
 		x = 0
 		y = 2
 		relative_position_id = SOV_rehabilitated_military
@@ -6129,7 +6131,7 @@ focus_tree = {
 					name = "Shtrafnaya Chast"
 					division_names_group = SOV_PEN_01
 					is_locked = yes
-
+					195 = {
 					regiments = {
 						penal_battalion = { x = 0 y = 0 }
 						penal_battalion = { x = 0 y = 1 }
@@ -6145,6 +6147,7 @@ focus_tree = {
 						artillery = { x = 0 y = 0 }
 					}
 				}
+			}
 
 				SOV_spawn_penal_divisions_effect = yes
 			}
@@ -6586,14 +6589,14 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_the_centre
+		id = SOV_The_book_from_Stalin
 		icon = GFX_focus_fra_loyalty_stalin
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
 		x = 0
 		y = 1
 
 		relative_position_id = SOV_the_path_of_marxism_leninism
-		cost = 5
+		cost = 7
 
 		available = {
 
@@ -6602,6 +6605,18 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA FOCUS_FILTER_STABILITY}
 
 		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_idea = partial_economic_mobilisation }
+				}
+				add_ideas = partial_economic_mobilisation
+			}
+			else_if = {
+				limit = {
+					has_idea = partial_economic_mobilisation 
+				}
+				add_political_power = 150 				
+			}
 			hidden_effect = {
 				add_dynamic_modifier = { modifier = SOV_the_politburo_good_dynamic_modifier }
 			}
@@ -6621,10 +6636,10 @@ focus_tree = {
 	focus = {
 		id = SOV_socialism_in_one_country
 		icon = GFX_focus_SOV_socialism_in_one_country
-		prerequisite = { focus = SOV_the_centre }
+		prerequisite = { focus = SOV_The_book_from_Stalin }
 		x = -1
 		y = 1
-		relative_position_id = SOV_the_centre
+		relative_position_id = SOV_The_book_from_Stalin
 		cost = 5
 
 		available = {
@@ -6648,10 +6663,10 @@ focus_tree = {
 	focus = {
 		id = SOV_the_stalin_constitution
 		icon = GFX_goal_support_communism
-		prerequisite = { focus = SOV_the_centre }
+		prerequisite = { focus = SOV_The_book_from_Stalin }
 		x = 1
 		y = 1
-		relative_position_id = SOV_the_centre
+		relative_position_id = SOV_The_book_from_Stalin
 		cost = 5
 
 		available = {
@@ -8503,7 +8518,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = SOV_the_comintern
-		cost = 1
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
@@ -8516,7 +8531,7 @@ focus_tree = {
 		available = {
 			has_civil_war = no
 			OR = {
-				has_completed_focus = SOV_the_centre
+				has_completed_focus = SOV_The_book_from_Stalin
 				has_completed_focus = SOV_the_left_opposition
 				has_completed_focus = SOV_the_right_opposition
 			}
@@ -8906,7 +8921,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_the_comintern
-		cost = 1
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -9011,7 +9026,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_baltic_security
-		cost = 1
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -9096,7 +9111,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_claims_in_baltic
-		cost = 1
+		cost = 5
 		
 		ai_will_do = {
 			factor = 1
@@ -10246,4 +10261,82 @@ ai_will_do = {
 #			}
 #		}
 #	}
-#}
+#}	
+focus = {
+		id = SOV_Mobilisation_Wave
+		icon = GFX_focus_SOV_restore_cossack_units
+		x = 46
+		y = 1
+		cost = 5
+		
+		available = {
+			casualties > 100
+			surrender_progress > 0.35
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_last_chance_tt
+			hidden_effect = {
+					division_template = {
+						name = "Strelkovaya Diviziya"
+						priority = 2
+						division_names_group = SOV_INF_01
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+							}
+							support = {
+							#recon = { x = 0 y = 0 }
+							engineer = { x = 0 y = 1 }
+							artillery = { x = 0 y = 0 } 	
+							}
+					}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 249 }
+					create_unit = {
+						division = "name = \"Strelkovaya Diviziya\" division_template = \"Strelkovaya Diviziya\" start_experience_factor = 1.0" 
+						owner = SOV
+						count = 50
+					}
+				}
+			}			
+		}
+	}
+focus = {
+		id = SOV_Offensive_Bagration
+		icon = GFX_goal_generic_war_with_comintern
+		
+
+		available_if_capitulated = no
+		will_lead_to_war_with = SOV
+
+		cancel = {
+			is_subject = yes
+			NOT = { country_exists = SOV }
+		}
+		
+		available = {
+			date > 1943.6.1
+			is_subject = no
+		}
+		x = 46
+		y = 0
+		cost = 3
+		completion_reward = {
+			SOV = {
+					add_timed_idea = { idea = Bagration_Ope days = 90 }
+			}
+			SOV = {
+					add_timed_idea = { idea = Attack_On_German_Airport days = 60 }
+			}
+		}
+}
+
